@@ -8,7 +8,7 @@ relative_links:
 theme: jekyll-theme-slate
 
 title: "CS472A"
-description: "Data Structures And Algorithms"
+description: "Digital Music Processing"
 
 url                      : https://ursinus-cs472a-s2021.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/Modules" # the subpath of your site, e.g. "/blog"
