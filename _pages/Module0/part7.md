@@ -19,10 +19,10 @@ and open the <code>test.py</code> file that you just downloaded.  Finally, click
 
 <img src = "../images/Module0/Run.png">
 <BR><BR>
-Then, <b>send me a screenshot of the image that pops up in the console to the right of Spyder, using a private message on Microsoft Teams</b>
+This will install a couple of packages that we'll use in the course (<a href = "https://librosa.org/">librosa</a> and <a href = "https://essentia.upf.edu/">essentia</a>), and then it will plot an image, which will show up to the right of Spyder or in the "plots pane" in newer versions.  <b>Send me a screenshot of the image that the code generates as a private message on Microsoft Teams</b>
 </p>
 
 <p>
-Please be sure also that you are able to launch Jupyter, as we may use this from time to time for quick examples and multimedia data.
+Please be sure also that you are able to launch Jupyter, as we may use this from time to time for organizing collections of audio examples in note form.
 </p>
 
