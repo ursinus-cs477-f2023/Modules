@@ -15,7 +15,7 @@ Please take a moment to register for our two Discord channels
 
 <h3>CS 472 Discord</h3>
 <p>
-<a href = "https://discord.gg/bAhdvjcckX">Click here</a> to register for the class discord.  Please post a brief message introducing yourself to the rest of the class, and tell us what your favorite musical instrument is.  Mine is either the '80s synth or the harmonica, the latter as played by Stevie Wonder.
+<a href = "https://discord.gg/bAhdvjcckX">Click here</a> to register for the class discord.  Please post a brief message introducing yourself to the rest of the class, and tell us what your favorite musical instrument is.  Even though I don't play either one of these, my favorite instrument is either the electric piano or the harmonica, the latter as played by Stevie Wonder.
 </p>
 
 <h3>ACM Discord</h3>
