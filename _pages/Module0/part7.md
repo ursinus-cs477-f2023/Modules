@@ -1,15 +1,15 @@
 ---
 layout: module
 permalink: /Module0/Part7
-title: "CS 371: Module 0 Warmup"
-excerpt: "CS 371: Module 0 Warmup"
+title: "CS 472: Module 0 Warmup"
+excerpt: "CS 472: Module 0 Warmup"
 
 info:
   prev: "./Part6"
   comments: "true"
 ---
 <p>
-Just one last thing!  We also need to make sure that Python works on your computer.  Luckily, there is a great software bundle called "Anaconda Python" that comes with everything we need in the course.  Please <a href = "http://www.ctralie.com/Teaching/CS371_S2021/Software/index.html">click here</a> to follow the directions to install this software on your computer.  
+Just one last thing!  We also need to make sure that Python works on your computer.  Luckily, there is a great software bundle called "Anaconda Python" that comes with everything we need in the course.  Please <a href = "http://www.ctralie.com/Teaching/CS472A_S2021/Software/index.html">click here</a> to follow the directions to install this software on your computer.  
 </p>
 
 <p>
@@ -20,6 +20,19 @@ and open the <code>test.py</code> file that you just downloaded.  Finally, click
 <img src = "../images/Module0/Run.png">
 <BR><BR>
 This will install a couple of packages that we'll use in the course (<a href = "https://librosa.org/">librosa</a> and <a href = "https://essentia.upf.edu/">essentia</a>), and then it will plot an image, which will show up to the right of Spyder or in the "plots pane" in newer versions.  <b>Send me a screenshot of the image that the code generates as a private message on Microsoft Teams</b>
+</p>
+
+<p>
+<b>NOTE:</b> If the above script fails, you may need to launch the <b>Anaconda prompt</b> and manually type
+</p>
+<code>
+pip install librosa
+</code>
+<code>
+pip install essentia
+</code>
+<p>
+Then run the script again
 </p>
 
 <p>
