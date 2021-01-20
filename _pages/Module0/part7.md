@@ -13,7 +13,7 @@ Just one last thing!  We also need to make sure that Python works on your comput
 </p>
 
 <p>
-Once you have Python installed, <a href = "../images/Module0/test.py">click here</a> to download some code that we will use to test it, and place it in your <code>CS371</code> folder (or wherever else you plan to store your class projects..but it is recommended that you keep them organized and back them up regularly).  Then, open Spyder, and go to <BR>
+Once you have Python installed, <a href = "../images/Module0/test.py">click here</a> to download some code that we will use to test it, and place it in your <code>CS472</code> folder (or wherever else you plan to store your class projects..but it is recommended that you keep them organized and back them up regularly).  Then, open Spyder, and go to <BR>
 <code>File->Open</code><BR>
 and open the <code>test.py</code> file that you just downloaded.  Finally, click the run button, which looks like this:<BR><BR>
 
