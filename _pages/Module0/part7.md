@@ -27,7 +27,7 @@ This will install a couple of packages that we'll use in the course (<a href = "
 </p>
 <code>
 pip install librosa
-</code>
+</code><BR>
 <code>
 pip install essentia
 </code>
