@@ -330,6 +330,9 @@ def save_audio_js(arr, sr):
                         jump("audio");
                      });
                 }
+                else {
+                    audioDOM.style.display = "none";
+                }
 
                 feedback.setValue(resultStr);
                 
