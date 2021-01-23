@@ -41,7 +41,9 @@ files:
           import matplotlib.pyplot as plt
           import numpy as np
           import io, base64
-          x = np.random.randn(100)
+          sr = 44100
+          x = np.random.randn(sr)
+          save_audio_js(x, sr)
 
 
 
@@ -52,11 +54,6 @@ files:
     isvisible: true
     code: |
         # Run some tests on the method
-        plt.figure(figsize=(8, 4))
-        plt.plot(x)
-        buf = io.BytesIO()
-        plt.savefig(buf, format='png')
-        buf.seek(0)
-        img_str = 'data:image/png;base64,' + base64.b64encode(buf.read()).decode('UTF-8')
+        
         
 ---
