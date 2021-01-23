@@ -70,11 +70,11 @@ function getWavHeader(options) {
 /**
  * Write the elements of an array to an HTML5 audio source
  * 
- * @param {DOM Element} audioElem DOM element for the audio controls
+ * @param {DOM Element} audioDOM DOM element for the audio controls
  * @param {array} samples Array of audio samples
  * @param {int} sr Sample rate
  */
-function writeWavAudioSource(audioElem, samples, sr) {
+function writeWavAudioSource(audioDOM, samples, sr) {
   return new Promise(resolve => {
     const audio = new Float32Array(samples);
     // get WAV file bytes and audio params of your audio source
@@ -86,10 +86,13 @@ function writeWavAudioSource(audioElem, samples, sr) {
     const wav = new Blob([wavBytes], { type: 'audio/wav' });
     let f = new FileReader();
     f.onload = function(e) {
+      audioDOM.innerHTML = ""; // Delete anything that was there before
+      let audioElem = document.createElement("audio");
+      audioElem.controls = true;
       let node = document.createElement("source");
       node.src = e.target.result;
-      audioElem.innerHTML = ""; // Delete anything that was there before
       audioElem.appendChild(node);
+      audioDOM.appendChild(audioElem);
       resolve(e.target.result);
     }
     f.readAsDataURL(wav);
