@@ -106,7 +106,6 @@ mynetid: ctralie
         {{ page.info.instructions }}
         {% endif %}
         
-        <div id="correctArea"></div>
         
         <p>
         <strong>Enter your Ursinus netid before clicking run.  This is <u>not</u> your ID number or your email.  For example, my netid is <code>{{layout.mynetid}}</code> (non Ursinus students can simply enter their name to get this to run, but they won't get an e-mail record or any form of credit)</strong> 
@@ -159,6 +158,8 @@ def save_audio_js(arr, sr):
         
         <h3>Output</h3>
         <div id="feedbackText"></div>
+
+        <div id="correctArea"></div>
 
         <div id="figure">
             <h3><a name="figure">Figure</a></h3>
@@ -288,7 +289,7 @@ def save_audio_js(arr, sr):
         });});
 
         feedback.setValue("Loading packages {{page.info.packages}}...");
-
+        let audioStr = "";
         function runCode() {
             if (!('ready' in pkgPromise)) {
                 pkgPromise.then(runCode);
@@ -309,56 +310,66 @@ def save_audio_js(arr, sr):
                     let top = document.getElementById(h).offsetTop;
                     window.scrollTo(0, top);
                 }
-
-                if (pyodide.globals.img_str.length > 0) {
-                    figureDOM.style.display = "block";
-                    console.log(pyodide.globals.img_str);
-                    document.getElementById("pyplotfigure").src=pyodide.globals.img_str;
-                    resultStr += "Figure plotted below. ";
-                    jump("figure");
-                }
-                else {
-                    figureDOM.style.display = "none";
-                }
-
-                if (pyodide.globals.audio_sav_arr.length > 0) {
-                    audioDOM.style.display = "block";
-                    console.log(pyodide.globals.audio_sav_arr);
-                    writeWavAudioSource(audioElem, pyodide.globals.audio_sav_arr, pyodide.globals.audio_sav_sr).then(function(s) {
-                        resultStr += "Audio output below. ";
-                        feedback.setValue(resultStr);
-                        jump("audio");
-                     });
-                }
-                else {
-                    audioDOM.style.display = "none";
-                }
-
-                feedback.setValue(resultStr);
                 
-                {{ page.processor.feedbackprocess | strip }}
-                if ({{ page.processor.correctcheck | strip}}) {
-                    correctlyAnswered = true;
-                    correctArea.innerHTML = "<h3><font color = #00AA00>{{ page.processor.correctfeedback | strip}}</font></h3>";
-                    <!-- Setting a page.processor.submitformlink in the markdown will pop up an iframe with a page of your choice -->
-                    {% if page.processor.submitformlink and page.processor.submitformlink != false %}
-                    correctArea.innerHTML += `
-                    <iframe src = "{{ page.processor.submitformlink | strip }}" width=800 height=500>
-                    `;
+                audioStr = "";
+                let process = new Promise(resolve => {
+                    let doingFigure = false;
+                    if (pyodide.globals.img_str.length > 0) {
+                        doingFigure = true;
+                        figureDOM.style.display = "block";
+                        document.getElementById("pyplotfigure").src=pyodide.globals.img_str;
+                        resultStr += "Figure plotted below. ";
+                        jump("figure");
+                    }
+                    else {
+                        figureDOM.style.display = "none";
+                    }
+                    let doingAudio = false;
+                    if (pyodide.globals.audio_sav_arr.length > 0) {
+                        doingAudio = true;
+                        audioDOM.style.display = "block";
+                        writeWavAudioSource(audioElem, pyodide.globals.audio_sav_arr, pyodide.globals.audio_sav_sr).then(function(s) {
+                            audioStr = s;
+                            resultStr += "Audio output below. ";
+                            feedback.setValue(resultStr);
+                            jump("audio");
+                            resolve();
+                        });
+                    }
+                    else {
+                        audioDOM.style.display = "none";
+                    }
+                    feedback.setValue(resultStr);
+                    if (doingFigure && !doingAudio) {
+                        resolve();
+                    }
+                });
+                
+                process.then(() => {
+                    {{ page.processor.feedbackprocess | strip }}
+                    if ({{ page.processor.correctcheck | strip}}) {
+                        correctlyAnswered = true;
+                        correctArea.innerHTML = "<h3><font color = #00AA00>{{ page.processor.correctfeedback | strip}}</font></h3>";
+                        <!-- Setting a page.processor.submitformlink in the markdown will pop up an iframe with a page of your choice -->
+                        {% if page.processor.submitformlink and page.processor.submitformlink != false %}
+                        correctArea.innerHTML += `
+                        <iframe src = "{{ page.processor.submitformlink | strip }}" width=800 height=500>
+                        `;
+                        {% endif %}
+                        
+                        postCode(true, false);
+                    }
+                    {% if page.processor.incorrectchecks %}
+                    {% for check in page.processor.incorrectchecks %}
+                    else if ({{ check.incorrectcheck | strip}}) {
+                        correctArea.innerHTML = "<h3><font color = red>{{ check.feedback | strip }}</font></h3>";
+                    }
+                    {% endfor %}
                     {% endif %}
-                    
-                    postCode(true, false);
-                }
-                {% if page.processor.incorrectchecks %}
-                {% for check in page.processor.incorrectchecks %}
-                else if ({{ check.incorrectcheck | strip}}) {
-                    correctArea.innerHTML = "<h3><font color = red>{{ check.feedback | strip }}</font></h3>";
-                }
-                {% endfor %}
-                {% endif %}
-                else {
-                    correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
-                }
+                    else {
+                        correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
+                    }
+                });
             }
             catch(err) {
                 correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
