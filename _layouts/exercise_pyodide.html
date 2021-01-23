@@ -325,7 +325,7 @@ def save_audio_js(arr, sr):
                     audioDOM.style.display = "block";
                     console.log(pyodide.globals.audio_sav_arr);
                     writeWavAudioSource(audioElem, pyodide.globals.audio_sav_arr, pyodide.globals.audio_sav_sr).then(function(s) {
-                        resultStr += "Audio outputted. ";
+                        resultStr += "Audio output below. ";
                         feedback.setValue(resultStr);
                         jump("audio");
                      });

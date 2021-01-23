@@ -5,6 +5,7 @@ title: "CS 472: Module 1: Python Basics Part 1"
 excerpt: "CS 472: Module 1: Python Basics Part 1"
 
 info:
+  prev: "./Video0"
   next: "./Exercise1"
   comments: "true"
 ---
