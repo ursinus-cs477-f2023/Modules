@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "Module2/Exercise3"
 title: "CS 472: Module 2: Part 3"
 excerpt: "CS 472: Module 2: Part 3"
-canvasasmtid: "111322"
+canvasasmtid: "111348"
 canvaspoints: "2"
 canvashalftries: 5
 

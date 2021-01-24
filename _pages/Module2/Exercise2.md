@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "Module2/Exercise2"
 title: "CS 472: Module 2: Part 2"
 excerpt: "CS 472: Module 2: Part 2"
-canvasasmtid: "111322"
+canvasasmtid: "111347"
 canvaspoints: "1.5"
 canvashalftries: 5
 
@@ -12,7 +12,7 @@ info:
   prev: "./Video2"
   next: "./Video3" 
   points: 1.5
-  instructions: "<p>Create a 660hz cosine-based square wave at a which occupies a half of a second, sampled at 44100 samples per second.</p>"
+  instructions: "<p>Create a 660hz cosine-based square wave at a which occupies a half of a second, sampled at 44100 samples per second.  To do this, create a 660hz cosine wave, then feed it as an argument to the <code>np.sign</code> function</p><p>Below is an image of the first 400 samples of the square wave you're shooting for</p><img src = \"../images/Module2/SquareWave.svg\">"
   packages: "numpy"
   goals:
     - To use numpy operations to create audio
@@ -42,6 +42,7 @@ files:
         import numpy as np
         ## TODO: Change y to hold the requested samples of the square wave
         sr = 44100
+        t = np.arange(int(sr/2))/sr
         y = np.array([0])
 
 
@@ -53,6 +54,5 @@ files:
     isvisible: true
     code: |
         save_audio_js(y, sr)
-        
         
 ---
