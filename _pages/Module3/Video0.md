@@ -1,6 +1,6 @@
 ---
 layout: module
-permalink: /Module3/Video1
+permalink: /Module3/Video0
 title: "CS 472 Module 3: Chirps, For Loops, Hamonicity"
 excerpt: "CS 472 Module 3: Chirps, For Loops, Hamonicity"
 
