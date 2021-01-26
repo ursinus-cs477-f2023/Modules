@@ -33,7 +33,7 @@ Now that we have a rough idea about the math, let's look at an experiment that s
 <h2>Plucked string</h2>
 
 <p>
-So in the above video we see that a string held down at two ends supports periods that are integer divisions of the length between the two ends, but what actually happens when a string is plucked?  Well, as it turns out, many of these are present, and they all go at once.  What we find over time, though, is that the higher frequency ones die out more quickly.  Have a look at this slow motion video of a plucked string to see this
+So in the above video we see that a string held down at two ends supports "wavelengths" (physical length of repetition of the pattern on the string) that are integer divisions of the length between the two ends.  The longest wavelength corresponds to the base frequency and shorter wavelengths corresponding to the integer multiples of that frequency.  But what actually happens when a string is plucked?  Well, as it turns out, many of these wavelengths are present, and they all go at once.  What we find over time, though, is that the higher frequency ones die out more quickly.  Have a look at this slow motion video of a plucked string to see this
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_X72on6CSL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
