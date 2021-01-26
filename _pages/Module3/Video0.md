@@ -1,11 +1,12 @@
 ---
 layout: module
 permalink: /Module3/Video0
-title: "CS 472 Module 3: Chirps, For Loops, Hamonicity"
-excerpt: "CS 472 Module 3: Chirps, For Loops, Hamonicity"
+title: "CS 472 Module 3: Standing Waves And Plucked String Synthesis"
+excerpt: "CS 472 Module 3: Standing Waves And Plucked String Synthesis"
 
 info:
   comments: "true"
+  next: "./Video1"
 ---
 
 <p>
