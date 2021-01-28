@@ -1,7 +1,7 @@
 import subprocess
 import sys
 # Install packages we'll need in the course
-for package in ["librosa", "essentia"]:
+for package in ["librosa"]:
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 import librosa
