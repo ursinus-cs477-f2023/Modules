@@ -1,6 +1,6 @@
 ---
 layout: exercise_pyodide
-permalink: "Module4/Exercise1"
+permalink: "Module4/Exercise0"
 title: "CS 472: Module 4: Part 0"
 excerpt: "CS 472: Module 4: Part 0"
 canvasasmtid: "112110"
