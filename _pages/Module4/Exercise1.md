@@ -1,17 +1,19 @@
 ---
 layout: exercise_pyodide
-permalink: "Module4/Exercise0"
-title: "CS 472: Module 4: Part 0"
-excerpt: "CS 472: Module 4: Part 0"
-canvasasmtid: "112110"
-canvaspoints: "1.5"
+permalink: "Module4/Exercise1"
+title: "CS 472: Module 4: Part 1"
+excerpt: "CS 472: Module 4: Part 1"
+canvasasmtid: "112201"
+canvaspoints: "2"
 canvashalftries: 5
 
 info:
+  prev: "./Video1"
+  next: "./Video2"
   comments: "true"
-  points: 1.5
+  points: 2
   instructions: "<p>Create a cubic chirp that starts at 220hz and ends at 660hz in a cubic rate over the interval of one second, sampled at 8000hz.  Use analytic methods to come up with an exact function, and then sample it over one second.  Hint: the frequency equation is \\[ 220 + 440 t^3, t \\in [0, 1] \\] You need to feed the antiderivative to this equation as the frequency term in the equation.  You should assume a constant of 0 when taking the antiderivative </p><p>To help you out, below is the sound you should be getting</p> <audio controls>
-  <source src=\"../images/Module3/Correct1.wav\" type=\"audio/wav\">
+  <source src=\"../images/Module4/Correct1.wav\" type=\"audio/wav\">
 Your browser does not support the audio element.
 </audio> <p>It starts at a 220hz A, one octave below concert A, and then it ends up at the E right above concert A</p>"
   packages: "numpy,matplotlib"
