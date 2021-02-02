@@ -9,7 +9,7 @@ canvashalftries: 5
 
 info:
   comments: "true"
-  prev: "./Video2"
+  prev: "./Video2.html"
   next: "./Video3" 
   points: 1.5
   instructions: "<p>Fill in the code below so that any sample with an average intensity less than or equal to <code>thresh</code> is cut out of the audio.  The correct answer should sound like this</p><audio controls><source src=\"../images/Module5/Correct2.wav\" type=\"audio/wav\">

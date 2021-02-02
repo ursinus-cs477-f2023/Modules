@@ -9,8 +9,8 @@ canvashalftries: 5
 
 info:
   comments: "true"
-  prev: "./Video1"
-  next: "./Video2" 
+  prev: "./Video1.html"
+  next: "./Video2.html" 
   points: 1.5
   instructions: "<p>Fill in the code below so that any sample with a window that has fewer than <code>thresh</code> zero crossings is set to zero.  This is very much like the example on the last page, and should only be one line of code.  The correct answer should sound like this</p><audio controls><source src=\"../images/Module5/Correct1.wav\" type=\"audio/wav\">
 Your browser does not support the audio element.
