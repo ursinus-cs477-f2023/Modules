@@ -14,7 +14,7 @@ info:
   points: 1.5
   instructions: "<p>Fill in the code below so that any sample with an average intensity less than or equal to <code>thresh</code> is cut out of the audio.  The correct answer should sound like this</p><audio controls><source src=\"../images/Module5/Correct2.wav\" type=\"audio/wav\">
 Your browser does not support the audio element.
-</audio><p>This should only take one line of code, and you don't need a loop.  You can also use boolean selection here, but slightly differently.  For example, if you had the numpy array </p><p><code>x = np.array([1, 4, 2, 6])</code></p><p>then <code>x[x > 2]</code> would return the array <code>np.array([4, 6])</code></p>
+</audio><p>This should only take one line of code, and you don't need a loop.  You can also use boolean selection here, but slightly differently.  For example, if you had the numpy array </p><p><code>x = np.array([1, 4, 2, 6, 7])</code></p> and another parallel (same number of elements) numpy array <p><code>filter = np.array([0, 1, 1, 0, 1])</code></p><p>then <code>x[filter > 0]</code> would return the array <code>np.array([4, 2, 7])</code></p>
 "
   packages: "numpy"
   goals:

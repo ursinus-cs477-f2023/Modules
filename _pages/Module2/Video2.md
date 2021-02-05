@@ -13189,7 +13189,7 @@ div#notebook {
 <ul>
 <li>A = amplitude</li>
 <li>f = frequency (in hz, or cycles per second)</li>
-<li>T = period = 1/f</li>
+<li>T = period = 1/f (the length of each repetition, in seconds)</li>
 <li>t = time </li>
 <li>$\phi$ = the phase</li>
 </ul>
