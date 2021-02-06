@@ -6,7 +6,6 @@ excerpt: "CS 472 Module 6: Methods As Parameters"
 
 info:
   prev: "./Video3"
-  next: "./Exercise3"
   comments: "true"
 ---
 

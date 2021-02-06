@@ -1,16 +1,16 @@
 ---
 layout: exercise_pyodide
 permalink: "Module6/Exercise2"
-title: "CS 472: Module 6: Exercise 1"
-excerpt: "CS 472: Module 6: Exercise 1"
+title: "CS 472: Module 6: Exercise 2"
+excerpt: "CS 472: Module 6: Exercise 2"
 canvasasmtid: "112628"
 canvaspoints: "1.5"
 canvashalftries: 5
 
 info:
   comments: "true"
-  prev: "./Video1.html"
-  next: "./Video2.html" 
+  prev: "./Video2.html"
+  next: "./Video3.html" 
   points: 1.5
   instructions: "<p>Fill in the code below to do fm synthesis to create a low bass plucked string sound with both a carrier frequency and a modulation frequency of 110hz.  Also, change the modulation index so that it decays exponentially as \\[5e^{-8t} \\].    The correct answer should sound like this</p><audio controls><source src=\"../images/Module6/Correct2.wav\" type=\"audio/wav\">
 Your browser does not support the audio element.
