@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "Module7/Exercise1"
 title: "CS 472: Module 7: Convolution Exercise"
 excerpt: "CS 472: Module 7: Convolution Exercise"
-canvasasmtid: "112339"
+canvasasmtid: "112864"
 canvaspoints: "2"
 canvashalftries: 5
 
