@@ -12,7 +12,7 @@ info:
   prev: "./Video1"
   next: "./Video2"
   points: 1.5
-  instructions: ""
+  instructions: "Fill in the <code>has_freq</code> method that determines whether a sinusoid of a particular frequency exists in a signal, using Fourier dot products."
   packages: "numpy"
   goals:
     - To use numpy element-wise operations with trig functions

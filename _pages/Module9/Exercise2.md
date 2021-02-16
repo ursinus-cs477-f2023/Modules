@@ -1,9 +1,9 @@
 ---
-layout: exercise_pyodide
+layout: exercise_python
 permalink: "Module9/Exercise2"
 title: "CS 472: Module 9: Exercise 2"
 excerpt: "CS 472: Module 9: Exercise 2"
-canvasasmtid: "113604"
+canvasasmtid: "113609"
 canvaspoints: "1.5"
 canvashalftries: 5
 
@@ -11,10 +11,9 @@ info:
   comments: "true"
   prev: "./Video2"
   points: 1.5
-  instructions: ""
+  instructions: "So far we've been talking about the frequencies in terms of integer number of cycles over a particular interval, but if we know how many samples are in that interval and what the sample rate is, we can devise a formula to determine what the frequency actually is in hz.  This will move us towards being able to detect notes in real audio using the DFT.  In this exercise, given a particular frequency index in either the cosine or sine array of DFT dot products, as well as the number of samples in the signal and the sample rate of the signal, return the frequency associated to the sine or cosine at a particular index $k$ in hz"
   packages: "numpy"
   goals:
-    - To use numpy element-wise operations with trig functions
     - To translate from indices of the DFT to frequencies of the DFT
     
 processor:  
@@ -22,54 +21,41 @@ processor:
   incorrectfeedback: "Try again"
   submitformlink: false
   feedbackprocess: | 
-      
+    var pos = feedbackString.trim();
   correctcheck: |
-    pyodide.globals.res == "1,1,0,0,1"
+    pos.includes("441.2205.11025")
   incorrectchecks:
     - incorrectcheck: |
-        pyodide.globals.res == "0,0,0,0,0"
-      feedback: "Try again.  It looks like you aren't returning True for things that are actually there."
-    - incorrectcheck: |
-        pyodide.globals.res == "0,0,0,0,1"
-      feedback: "Try again.  It's OK if either a sine OR a cosine is there." 
-
+        pos.includes("0.0.0")
+      feedback: "Try again.  You need to return the frequency in hz, not 0"
 files:
   - filename: "Student Code"
     name: driver
     ismain: false
     isreadonly: false
     isvisible: true
-    height: 600
+    height: 400
     code: | 
-        import numpy as np
-        def has_freq(x, f, thresh):
-            """
-            Determine whether a frequency is contained in a signal
-            
-            Parameters
-            ----------
-            x: ndarray(N)
-                The signal of interest
-            f: int
-                The frequency to check
-            thresh: float
-                If either the sine component or the cosine
-                component are above this threshold, then consider
-                the frequency f to exist
-            
-            Returns
-            -------
-            True if the frequency is in x, and False otherwise
-            """
-            N = len(x)
-            n = np.arange(N)/N
-            c = np.sum(x*np.cos(2*np.pi*f*n))
-            ## TODO: Fill in sine part, and if either is > thresh, 
-            ## then say it has the frequency
-            
-            return False
+          def index_to_freq(k, N, sr):
+              """
+              Given a particular frequency index in either the
+              cosine or sine array of DFT dot products, as well
+              as the number of samples in the signal and the sample
+              rate of the signal, return the frequency associated
+              to the sine or cosine at a particular index $k$ in hz
 
-
+              Parameters
+              ----------
+              k: int
+                  Frequency index
+              N: int
+                  Number of samples
+              sr: int
+                  Sample rate
+              Returns
+              -------
+              """
+              return 0 ## TODO: This is a dummy value
 
 
   - filename: "Test Code Block"
@@ -78,14 +64,10 @@ files:
     isreadonly: true
     isvisible: true
     code: |
-        N = 100
-        t = np.arange(N)/N
-        y = np.cos(2*np.pi*2*t) + np.sin(2*np.pi*1*t) + np.cos(2*np.pi*5*t - np.pi/3)
-        resarr = np.array([has_freq(y, f, 0.1) for f in np.arange(1, 6)], dtype=int)
-        res = ""
-        for i, r in enumerate(resarr):
-            res += "%i"%r
-            if i < len(resarr)-1:
-                res += ","
+        res = "%i"%index_to_freq(1, 100, 44100)
+        res += ".%i"%index_to_freq(10, 200, 44100)
+        res += ".%i"%index_to_freq(11025, 44100, 44100)
+        print(res)
+        
         
 ---
