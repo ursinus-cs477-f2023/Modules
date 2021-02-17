@@ -11,7 +11,7 @@ info:
   comments: "true"
   prev: "./Video2"
   points: 1.5
-  instructions: "So far we've been talking about the frequencies in terms of integer number of cycles over a particular interval, but if we know how many samples are in that interval and what the sample rate is, we can devise a formula to determine what the frequency actually is in hz.  This will move us towards being able to detect notes in real audio using the DFT.  In this exercise, given a particular frequency index in either the cosine or sine array of DFT dot products, as well as the number of samples in the signal and the sample rate of the signal, return the frequency associated to the sine or cosine at a particular index $k$ in hz"
+  instructions: "<p>So far we've been talking about the frequencies in terms of integer number of cycles over a particular interval, but if we know how many samples are in that interval and what the sample rate is, we can devise a formula to determine what the frequency actually is in hz.  This will move us towards being able to detect notes in real audio using the DFT.  In this exercise, given a particular frequency index in either the cosine or sine array of DFT dot products, as well as the number of samples in the signal and the sample rate of the signal, return the frequency associated to the sine or cosine at a particular index $k$ in hz.</p><p><b>Hint</b>The equation is in terms of k, N, and sr only</p>"
   packages: "numpy"
   goals:
     - To translate from indices of the DFT to frequencies of the DFT
