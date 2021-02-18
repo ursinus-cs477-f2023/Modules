@@ -1,6 +1,6 @@
 ---
 layout: module
-permalink: /Module10/Video1
+permalink: /Module10/Exercise1
 title: "CS 472 Module 10: DFT Properties Exercise"
 excerpt: "CS 472 Module 10: DFT Properties Exercise"
 
