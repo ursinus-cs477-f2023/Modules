@@ -15,4 +15,4 @@ Please watch the video below, and click the <code>Next</code> button to continue
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/65EYg6enKFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe src = "../images/Module11/STFTWindowing.html" width="700" height="6000"></iframe>
+<iframe src = "../images/Module11/STFT.html" width="700" height="6000"></iframe>
