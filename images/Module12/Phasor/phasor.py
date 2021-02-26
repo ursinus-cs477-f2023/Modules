@@ -69,11 +69,9 @@ for i in range(H):
     As.append(2/(2*i+1))
     fs.append(1+2*i)
 
-"""
-As = [2]
-fs = [1]
-phis = [(np.pi/3, "")]
-"""
+As = [3]
+fs = [2]
+phis = [(-np.pi/2, "")]
 
 plt.figure(figsize=(8, 8))
 N = 10000

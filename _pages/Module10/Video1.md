@@ -16,4 +16,4 @@ Please watch the video below, and click the <code>Next</code> button to continue
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BXB7iNi4m7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe src = "../images/Module10/SquareWave" width="700" height="5900"></iframe>
+<iframe src = "../images/Module10/SquareWave.html" width="700" height="5900"></iframe>
