@@ -12,11 +12,10 @@ info:
   prev: "./Video1"
   next: "./Video2"
   points: 1.5
-  instructions: "Fill in the <code>has_freq</code> method that determines whether a sinusoid of a particular frequency exists in a signal, using Fourier dot products."
+  instructions: "Fill in the <code>max_freq</code> method to compute the index of the maximum amplitude frequency from a set of complex DFT coefficients.  You can use <code>np.argmax</code> to find the index of the maximum element in an array.  You can also use <code>np.abs</code> to find the absolute value (complex modulus) of complex numbers."
   packages: "numpy"
   goals:
-    - To use numpy element-wise operations with trig functions
-    - To apply Fourier projection to check for the existence of a sinusoid
+    - To use properties of complex numbers to compute amplitudes
     
 processor:  
   correctfeedback: "Correct!!" 
@@ -29,7 +28,7 @@ processor:
   incorrectchecks:
     - incorrectcheck: |
         pyodide.globals.idx == "4"
-      feedback: "Be careful!  Make sure you're taking the absolute value / magnitude and not just the real component"
+      feedback: "Be careful!  Make sure you're taking the absolute value / magnitude (np.abs) and not just the real component"
 
 files:
   - filename: "Student Code"
