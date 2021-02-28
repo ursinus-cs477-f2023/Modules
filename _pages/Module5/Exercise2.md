@@ -42,6 +42,7 @@ files:
     ismain: false
     isreadonly: true
     isvisible: false
+    nosend: true
     code: | 
         def get_female_countdown():
           sr = 8000
