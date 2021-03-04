@@ -13086,8 +13086,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Convolution in Time Domain: Just as the DFT of the convolution of two signals is the product of those signals' DFTs,</p>
-<p>Convolution in Frequency Domain: The product of two signals is the convolution of the DFTs of the two signals</p>
+<p>Because the formulas for the forward and inverse DFT are so similar, we have the following two "dual properties" of convolution and multiplication:</p>
+<ul>
+<li><p>Convolution in the time domain leads to multiplication in the frequency domain</p>
+</li>
+<li><p>Multiplication in the time domain leads to convolution in the frequency domain</p>
+</li>
+</ul>
+<p>We're going to examine the latter to help us understand the frequency properties of <a href = "https://ursinus-cs472a-s2021.github.io/Modules/Module11/Video1">window functions</a> that we use when doing the Short-Time Fourier Transform, since we multiply by windows in the time domain</p>
 
 </div>
 </div>
