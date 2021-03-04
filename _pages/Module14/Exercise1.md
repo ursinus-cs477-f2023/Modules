@@ -1,8 +1,8 @@
 ---
 layout: exercise_pyodide
 permalink: "Module14/Exercise1"
-title: "CS 472: Module 14: Exercise 1"
-excerpt: "CS 472: Module 14: Exercise 1"
+title: "CS 472: Module 14: Highpass Filter Exercise"
+excerpt: "CS 472: Module 14: Highpass Filter Exercise"
 canvasasmtid: "114693"
 canvaspoints: "1.5"
 canvashalftries: 5
