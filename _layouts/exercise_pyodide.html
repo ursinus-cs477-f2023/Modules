@@ -193,9 +193,6 @@ def save_audio_js(arr, sr):
         let editorNoSend = [];
 
         // Add hidden utilities code first
-        editors.push(ace.edit("utilEditor"));
-        editorNoSend.push(true);
-
         {% for file in page.files %}
         {% if file.nosend == true %}
             editorNoSend.push(true);
@@ -203,6 +200,8 @@ def save_audio_js(arr, sr):
             editorNoSend.push(false);
         {% endif %}
         {% if file.ismain == true %}
+        editors.push(ace.edit("utilEditor"));
+        editorNoSend.push(true);
         let mainEditor = ace.edit("mainEditor");
         mainEditor.setFontSize(16);
         mainEditor.session.setMode("ace/mode/python");

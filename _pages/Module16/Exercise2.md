@@ -9,8 +9,8 @@ canvashalftries: 5
 
 info:
   comments: "true"
-  prev: "./Video2.html"
-  next: "./Video3.html" 
+  prev: "./Video2"
+  next: "./Video3" 
   points: 1.5
   instructions: "Modify the <code>estimate_tempo</code> method below to implement a simple tempo estimation algorithm that finds the shift corresponding to the maximum value in the autocorrelation of the novelty function, and which converts this to a tempo in beats per minute.  You can find the maximum bin with <code>np.argmax(novfncopy)</code>.  Then, convert this index into a time shift by multiplying it by <code>hop_length/sr</code>.  Finally, convert the shift from a time into a frequency in beats per minute dividing 60 by it."
   packages: "numpy"
