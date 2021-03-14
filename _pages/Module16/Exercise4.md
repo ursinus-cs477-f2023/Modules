@@ -9,7 +9,7 @@ canvashalftries: 5
 
 info:
   comments: "true"
-  next: "./Video4" 
+  prev: "./Video4" 
   points: 2
   instructions: "<p>Fill in the <code>get_mel_filterbank</code> method to fill in the mel filterbank in the rows of a matrix.  The code will apply it to a spectrogram of The Beatles, as shown below</p><p><img src = \"../images/Module16/S.png\"></p><p>If your code works properly, the mel spectrogram should look like this:</p><p><img src = \"../images/Module16/M.png\"></p>  <p><b>HINT:</b>The <code>np.linspace</code> command will help you to create the left and right sides of each triangle.</b>"
   packages: "numpy,matplotlib"
