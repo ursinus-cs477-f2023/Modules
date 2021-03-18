@@ -10,4 +10,4 @@ info:
 ---
 
 
-<iframe src = "../images/Module17/Exercise2.html" width="700" height="2500">
+<iframe src = "../images/Module17/Exercise2.html" width="700" height="1000">
