@@ -12,7 +12,7 @@ info:
   prev: "./Video1"
   next: "./Video2" 
   points: 1.5
-  instructions: "Fill in the code below to sum up the distances in a cross-similarity matrix that a warping path passes through."
+  instructions: "Fill in the code below to sum up the distances in a cross-similarity matrix that a warping path passes through.  Programmatically, a warping path is actually a 2D array of [i, j].  For example, <p><code>[[0, 0], [0, 1], [1, 2], [2, 3]]</code></p> is a warping path.  It is possible to loop through this like <p><code>for idx in range(len(path)):<BR>&nbsp&nbsp&nbsp&nbspi = path[idx, 0]<BR>&nbsp&nbsp&nbsp&nbspj = path[idx, 1]</code></p>But, thanks to the wonders of python, you can unpack the inner arrays with a simpler loop<p><code>for i, j in path:</code></p>This is the starting point in the code below."
   packages: "numpy"
   goals:
     - To compute the cost of warping paths by referencing cross-similarity matrices
