@@ -39,7 +39,7 @@ files:
     code: | 
          def convert_format(filename):
              """
-             Compute the bus and van capacity
+             Convert the file ending from .jpg to .png
              Parameters
              ----------
              filename: string
