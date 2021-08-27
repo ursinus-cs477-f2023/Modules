@@ -1,15 +1,16 @@
 ---
 layout: exercise_python
 permalink: "Module1/Exercise3"
-title: "CS 472: Module 1: Python Basics Part 3"
-excerpt: "CS 472: Module 1: Python Basics Part 3"
-canvasasmtid: "111004"
+title: "CS 477: Module 1: Python Basics Part 3"
+excerpt: "CS 477: Module 1: Python Basics Part 3"
+canvasasmtid: "123842"
 canvaspoints: "1.5"
 canvashalftries: 5
 
 info:
   comments: "true"
   prev: "./Video3"
+  next: "./Video4"
   points: 1.5
   instructions: "<p>Just one more exercise in this module!  Chad is a big baby when it comes to going outside.  He only goes outside if it's more than 60 degrees Fahrenheit but less than 80 degrees Fahrenheit.  Write a method called <code>goes_outside</code> that takes one parameter for the temperature and returns <code>True</code> if Chad is willing to go outside and <code>False</code> otherwise."
   goals:

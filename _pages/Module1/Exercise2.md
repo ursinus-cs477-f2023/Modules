@@ -1,9 +1,9 @@
 ---
 layout: exercise_python
 permalink: "Module1/Exercise2"
-title: "CS 472: Module 1: Python Basics Part 2"
-excerpt: "CS 472: Module 1: Python Basics Part 2"
-canvasasmtid: "111003"
+title: "CS 477: Module 1: Python Basics Part 2"
+excerpt: "CS 477: Module 1: Python Basics Part 2"
+canvasasmtid: "123841"
 canvaspoints: "1.5"
 canvashalftries: 5
 
