@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="315.46469mm"
+   height="581.85681mm"
+   viewBox="0 0 315.46469 581.85681"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="Notes1.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1433"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1431"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="37.791443"
+     inkscape:cy="757.81243"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     height="400mm"
+     inkscape:window-width="1792"
+     inkscape:window-height="990"
+     inkscape:window-x="2048"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.40173337,92.557506)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="4.2763124"
+       y="-86.124825"
+       id="text895"><tspan
+         sodipodi:role="line"
+         id="tspan893"
+         x="4.2763124"
+         y="-86.124825"
+         style="stroke-width:0.26458332">Probability is measuring likelihood of events</tspan><tspan
+         sodipodi:role="line"
+         x="4.2763124"
+         y="-75.541489"
+         style="stroke-width:0.26458332"
+         id="tspan897" /><tspan
+         sodipodi:role="line"
+         x="4.2763124"
+         y="-64.95816"
+         style="stroke-width:0.26458332"
+         id="tspan899">Def. Event Space: All of the possible outcomes in a model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.1471987"
+       y="-44.965187"
+       id="text903"><tspan
+         sodipodi:role="line"
+         id="tspan901"
+         x="6.1471987"
+         y="-44.965187"
+         style="stroke-width:0.26458332">Ex) Tossing a coin, Event Space = {Head, Tails}</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect905"
+       width="109.04597"
+       height="58.264755"
+       x="9.3544331"
+       y="-28.661682"
+       ry="3.3408673" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.299902,-28.394683 0.267269,57.99748"
+       id="path907"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="23.786987"
+       y="1.0052342"
+       id="text911"><tspan
+         sodipodi:role="line"
+         id="tspan909"
+         x="23.786987"
+         y="1.0052342"
+         style="stroke-width:0.26458332">Head</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="78.309975"
+       y="-0.86566114"
+       id="text915"><tspan
+         sodipodi:role="line"
+         id="tspan913"
+         x="78.309975"
+         y="-0.86566114"
+         style="stroke-width:0.26458332">Tails</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="136.04019"
+       y="-15.832747"
+       id="text919"><tspan
+         sodipodi:role="line"
+         id="tspan917"
+         x="136.04019"
+         y="-15.832747"
+         style="stroke-width:0.26458332">P(Heads) = 0.5</tspan><tspan
+         sodipodi:role="line"
+         x="136.04019"
+         y="-5.2494144"
+         style="stroke-width:0.26458332"
+         id="tspan921" /><tspan
+         sodipodi:role="line"
+         x="136.04019"
+         y="5.3339181"
+         style="stroke-width:0.26458332"
+         id="tspan923">P(Tails) = 0.5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="134.1693"
+       y="23.723129"
+       id="text927"><tspan
+         sodipodi:role="line"
+         id="tspan925"
+         x="134.1693"
+         y="23.723129"
+         style="stroke-width:0.26458332">** Each probability must </tspan><tspan
+         sodipodi:role="line"
+         x="134.1693"
+         y="34.306461"
+         style="stroke-width:0.26458332"
+         id="tspan1632">    be between 0 and 1</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0.26726951,39.352176 296.66917,37.481289"
+       id="path935"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="1.0690782"
+       y="50.844769"
+       id="text951"><tspan
+         sodipodi:role="line"
+         id="tspan949"
+         x="1.0690782"
+         y="50.844769"
+         style="stroke-width:0.26458332">Ex) What's the probability that it's cloudy in Seattle on any given day?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.898014"
+       y="66.613678"
+       id="text955"><tspan
+         sodipodi:role="line"
+         id="tspan953"
+         x="13.898014"
+         y="66.613678"
+         style="stroke-width:0.26458332">Event Space = {Cloudy, Sunny and beutiful, Sunny and hazy}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.096207"
+       y="83.451653"
+       id="text959"><tspan
+         sodipodi:role="line"
+         id="tspan957"
+         x="13.096207"
+         y="83.451653"
+         style="stroke-width:0.26458332">Cloudy 308 days of the year</tspan><tspan
+         sodipodi:role="line"
+         x="13.096207"
+         y="94.034988"
+         style="stroke-width:0.26458332"
+         id="tspan961">P(Cloudy) = 308/365 = 0.84</tspan><tspan
+         sodipodi:role="line"
+         x="13.096207"
+         y="104.61832"
+         style="stroke-width:0.26458332"
+         id="tspan979">P(Not Cloudy) = 0.16</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05639923;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect963"
+       width="122.58784"
+       height="65.748306"
+       x="160.45059"
+       y="83.184387"
+       ry="3.3408673" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.11614144;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path965"
+       cx="227.71362"
+       cy="121.00302"
+       rx="48.317711"
+       ry="26.267977" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="212.74654"
+       y="123.54208"
+       id="text969"><tspan
+         sodipodi:role="line"
+         id="tspan967"
+         x="212.74654"
+         y="123.54208"
+         style="stroke-width:0.26458332">Cloudy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="198.04671"
+       y="91.736992"
+       id="text973"><tspan
+         sodipodi:role="line"
+         id="tspan971"
+         x="198.04671"
+         y="91.736992"
+         style="stroke-width:0.26458332">Not cloudy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="12.294397"
+       y="126.21478"
+       id="text977"><tspan
+         sodipodi:role="line"
+         id="tspan975"
+         x="12.294397"
+         y="126.21478"
+         style="stroke-width:0.26458332">P(Not Cloudy) = 1 - P(Cloudy)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0.1336406,159.48983 296.53554,157.61894"
+       id="path935-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 230.38633,83.451648 V 94.4097"
+       id="path1012"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 229.04998,147.59633 v 1.87089"
+       id="path1014"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="247.22432"
+       y="92.00428"
+       id="text1018"><tspan
+         sodipodi:role="line"
+         id="tspan1016"
+         x="247.22432"
+         y="92.00428"
+         style="stroke-width:0.26458332">sunny </tspan><tspan
+         sodipodi:role="line"
+         x="247.22432"
+         y="102.58762"
+         style="stroke-width:0.26458332"
+         id="tspan1020">and hazy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.55989"
+       y="145.45818"
+       id="text1024"><tspan
+         sodipodi:role="line"
+         id="tspan1022"
+         x="159.55989"
+         y="145.45818"
+         style="stroke-width:0.26458332">beautiful</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="12.561667"
+       y="143.32002"
+       id="text1028"><tspan
+         sodipodi:role="line"
+         id="tspan1026"
+         x="12.561667"
+         y="143.32002"
+         style="stroke-width:0.26458332">P(Event) + (not Event) = 1</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1074"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,0,-103)"><flowRegion
+         id="flowRegion1076"><rect
+           id="rect1078"
+           width="338.23355"
+           height="247.31975"
+           x="135.528"
+           y="1371.5675" /></flowRegion><flowPara
+         id="flowPara1080" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="9.0871639"
+       y="176.72873"
+       id="text1523"><tspan
+         sodipodi:role="line"
+         id="tspan1521"
+         x="9.0871639"
+         y="176.72873"
+         style="stroke-width:0.26458332">Ex) Event space = {Ursinus students in 300/400 CS courses F2021}</tspan><tspan
+         sodipodi:role="line"
+         x="9.0871639"
+         y="187.31206"
+         style="stroke-width:0.26458332"
+         id="tspan1525">* Assume 50 such students</tspan><tspan
+         sodipodi:role="line"
+         x="9.0871639"
+         y="197.8954"
+         style="stroke-width:0.26458332"
+         id="tspan1529">* 30 uniuqe students with Prof. Tralie</tspan><tspan
+         sodipodi:role="line"
+         x="9.0871639"
+         y="208.47873"
+         style="stroke-width:0.26458332"
+         id="tspan1533">P(Prof. Tralie's class) = 30/50 = 0.6</tspan><tspan
+         sodipodi:role="line"
+         x="9.0871639"
+         y="219.06206"
+         style="stroke-width:0.26458332"
+         id="tspan1535">* 22 students in CS477, P(CS477) = 22/50 = 0.44</tspan><tspan
+         sodipodi:role="line"
+         x="9.0871639"
+         y="229.64539"
+         style="stroke-width:0.26458332"
+         id="tspan1537">* 16 students in CS373, P(CS373) = 16/50 = 0.32</tspan><tspan
+         sodipodi:role="line"
+         x="9.0871639"
+         y="240.22873"
+         style="stroke-width:0.26458332"
+         id="tspan1549" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="30.735996"
+       y="247.28789"
+       id="text1555"><tspan
+         sodipodi:role="line"
+         id="tspan1553"
+         x="30.735996"
+         y="247.28789"
+         style="stroke-width:0.26458332">0.44 + 0.32 - 0.16 = 0.6</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.39215686;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1557"
+       width="101.29515"
+       height="63.877415"
+       x="49.444862"
+       y="259.315"
+       ry="3.3408673" />
+    <ellipse
+       style="fill:none;fill-opacity:0.39215686;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path1559"
+       cx="83.655357"
+       cy="292.45642"
+       rx="26.726952"
+       ry="21.381561" />
+    <ellipse
+       style="fill:none;fill-opacity:0.39215686;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path1561"
+       cx="114.25772"
+       cy="294.72821"
+       rx="27.127857"
+       ry="22.317005" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="67.351921"
+       y="290.31827"
+       id="text1565"><tspan
+         sodipodi:role="line"
+         id="tspan1563"
+         x="67.351921"
+         y="290.31827"
+         style="stroke-width:0.26458332">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="122.40945"
+       y="291.92184"
+       id="text1569"><tspan
+         sodipodi:role="line"
+         id="tspan1567"
+         x="122.40945"
+         y="291.92184"
+         style="stroke-width:0.26458332">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.277061"
+       y="285.77469"
+       id="text1573"><tspan
+         sodipodi:role="line"
+         id="tspan1571"
+         x="93.277061"
+         y="285.77469"
+         style="stroke-width:0.26458332">A</tspan><tspan
+         sodipodi:role="line"
+         x="93.277061"
+         y="296.35803"
+         style="stroke-width:0.26458332"
+         id="tspan1575">and</tspan><tspan
+         sodipodi:role="line"
+         x="93.277061"
+         y="306.94135"
+         style="stroke-width:0.26458332"
+         id="tspan1577">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="153.94724"
+       y="258.24591"
+       id="text1581"><tspan
+         sodipodi:role="line"
+         id="tspan1579"
+         x="153.94724"
+         y="258.24591"
+         style="stroke-width:0.26458332">P(A or B) = P(A) + P(B) - P(A And B)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="165.97438"
+       y="284.9729"
+       id="text1585"><tspan
+         sodipodi:role="line"
+         id="tspan1583"
+         x="165.97438"
+         y="284.9729"
+         style="stroke-width:0.26458332">P(Prof. Tralie) = P(CS477) + </tspan><tspan
+         sodipodi:role="line"
+         x="165.97438"
+         y="295.55624"
+         style="stroke-width:0.26458332"
+         id="tspan1587">                       P(CS373) -</tspan><tspan
+         sodipodi:role="line"
+         x="165.97438"
+         y="306.13956"
+         style="stroke-width:0.26458332"
+         id="tspan1589">                      P(CS 477 and CS373)</tspan><tspan
+         sodipodi:role="line"
+         x="165.97438"
+         y="316.7229"
+         style="stroke-width:0.26458332"
+         id="tspan1591" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -0.40089836,342.03491 296.00099,340.16402"
+       id="path935-3-7"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="8.0180855"
+       y="357.40289"
+       id="text1669"><tspan
+         sodipodi:role="line"
+         id="tspan1667"
+         x="8.0180855"
+         y="357.40289"
+         style="stroke-width:0.26458332">Disjoint Events</tspan><tspan
+         sodipodi:role="line"
+         x="8.0180855"
+         y="367.98624"
+         style="stroke-width:0.26458332"
+         id="tspan1671" /><tspan
+         sodipodi:role="line"
+         x="8.0180855"
+         y="378.56955"
+         style="stroke-width:0.26458332"
+         id="tspan1673">Ex) Event Space = {All CS students in PA}</tspan><tspan
+         sodipodi:role="line"
+         x="8.0180855"
+         y="389.15289"
+         style="stroke-width:0.26458332"
+         id="tspan1675" /><tspan
+         sodipodi:role="line"
+         x="8.0180855"
+         y="399.73624"
+         style="stroke-width:0.26458332"
+         id="tspan1677">P(CS477@Ursinus OR CS317@BrynMawr) = </tspan><tspan
+         sodipodi:role="line"
+         x="8.0180855"
+         y="410.31955"
+         style="stroke-width:0.26458332"
+         id="tspan1679">P(CS477@Ursinus) + P(CS371@BrynMawr)</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.39215686;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1681"
+       width="135.77292"
+       height="69.490074"
+       x="29.399649"
+       y="419.67673"
+       ry="3.3408673" />
+    <ellipse
+       style="fill:none;fill-opacity:0.39215686;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path1683"
+       cx="45.034916"
+       cy="441.72644"
+       rx="7.6171813"
+       ry="7.3499122" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="38.754082"
+       y="432.23837"
+       id="text1687"><tspan
+         sodipodi:role="line"
+         id="tspan1685"
+         x="38.754082"
+         y="432.23837"
+         style="stroke-width:0.26458332">Ursinus</tspan></text>
+    <ellipse
+       style="fill:none;fill-opacity:0.39215686;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="path1689"
+       cx="113.85682"
+       cy="471.52701"
+       rx="8.8198938"
+       ry="8.2853556" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="103.70056"
+       y="458.43082"
+       id="text1693"><tspan
+         sodipodi:role="line"
+         id="tspan1691"
+         x="103.70056"
+         y="458.43082"
+         style="stroke-width:0.26458332">Bryn Mawr</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.624969,435.4456 c 0.178178,0.35637 0.356359,0.71273 0.534537,1.0691 0.08909,0.0891 0.210926,0.15457 0.267269,0.26726 0.0199,0.0398 0.03059,1.74852 0,1.87089 -0.04831,0.19325 -0.204271,0.34555 -0.267269,0.53454 -0.02817,0.0845 0,0.17817 0,0.26726 0,0.27654 0.05092,1.66724 0,1.87089 -0.04831,0.19325 -0.204274,0.34555 -0.267269,0.53454 -0.02817,0.0845 0.02162,0.18084 0,0.26728 -0.06833,0.27332 -0.19894,0.52848 -0.267268,0.80179 -0.02162,0.0864 0.02817,0.18275 0,0.26729 -0.063,0.18899 -0.204275,0.34554 -0.267272,0.53453 -0.05634,0.16905 0.09884,0.3863 0,0.53454 -0.139774,0.20966 -0.356359,0.35637 -0.534538,0.53454 -0.08909,0.0891 -0.210923,0.15457 -0.267268,0.26725 -0.07968,0.15939 0.07968,0.37518 0,0.53454 -0.556157,1.11234 0.01844,-0.28569 -0.534541,0.26728 -0.178244,0.17825 0.178247,0.35629 0,0.53454 -0.356359,0.35637 -0.267269,-0.44545 -0.267269,0.26728"
+       id="path1695"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105.03692,473.39788 c -0.13051,-1.07109 1.24609,-0.35576 1.60362,-0.53454 0.11269,-0.0563 0.15458,-0.21092 0.26727,-0.26725 0.0797,-0.0399 0.17818,0 0.26727,0 0.0891,-0.0891 0.15458,-0.21093 0.26727,-0.26729 0.15937,-0.0797 0.37517,0.0797 0.53454,0 0.11269,-0.0564 0.15458,-0.21092 0.26727,-0.26725 0.0797,-0.0399 0.17818,0 0.26727,0 0.17818,-0.0891 0.36878,-0.15679 0.53454,-0.26728 0.20966,-0.13978 0.30915,-0.42185 0.53453,-0.53454 0.0797,-0.0399 0.17818,0 0.26728,0 0.17817,-0.0891 0.36878,-0.15677 0.53453,-0.26728 0.10484,-0.0699 0.14775,-0.22741 0.26727,-0.26726 0.16904,-0.0564 0.36551,0.0563 0.53454,0 0.26263,-0.0876 0.44099,-0.66148 0.53454,-0.80182 0.0699,-0.10483 0.21093,-0.15457 0.26727,-0.26725 0.0398,-0.0797 -0.063,-0.20429 0,-0.26729 0.12599,-0.12599 0.40855,0.126 0.53454,0 0.063,-0.063 -0.0398,-0.18759 0,-0.26725 0.11269,-0.2254 0.45486,-0.29549 0.53454,-0.53454 0.0564,-0.16904 -0.0563,-0.36552 0,-0.53454 0.0431,-0.12943 1.23713,-1.18753 1.33635,-1.33635 0.0494,-0.0741 -0.0891,-0.26729 0,-0.26729 0.0891,0 0,0.1782 0,0.26729 0.17817,-0.26729 0.39088,-0.51451 0.53453,-0.80182 0.1426,-0.2852 -0.14259,-0.24935 0,-0.53454 0.0564,-0.11269 0.22743,-0.14775 0.26728,-0.26726 0.0563,-0.16904 0,-0.35636 0,-0.53454 0,-0.0891 -0.0399,-0.18758 0,-0.26728 0.0563,-0.11268 0.22742,-0.14774 0.26726,-0.26725 0.0563,-0.16905 0,-0.35637 0,-0.53454 0,-0.0891 -0.0398,-0.18759 0,-0.26728 0.33027,-0.66054 0.26727,0.0923 0.26727,-0.53454"
+       id="path1703"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.92708"
+       y="356.73361"
+       id="text917"><tspan
+         sodipodi:role="line"
+         id="tspan915"
+         x="174.92708"
+         y="356.73361"
+         style="stroke-width:0.26458332">P(A or B) = P(A) + P(B)</tspan></text>
+  </g>
+</svg>

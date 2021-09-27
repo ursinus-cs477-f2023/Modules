@@ -1,0 +1,65 @@
+Part 1: Basics of probability
+
+* Probability as a venn diagram
+* The complement of an event (sunny vs not sunny). In Seattle 164 days at least partly sunny
+
+* Joint probabilities
+- Event space: All students taking a class with Prof. Tralie this fall (30)
+373: 16, 477: 22
+In common: 8
+
+* Probability of OR
+Driving into work on Schuykill vs driving home, traffic
+
+* Disjoint probabilities
+Ex) CS Students: 173 disjoint from 373, 477
+
+
+
+
+Exercise: Summer/cloudy/thunderstorm
+
+--------------------------------------
+Part 2: Conditional Probabilities
+* Definition of conditional probability, with picture
+* Example of conditional probability with CS 371 and CS 477 living in space of all Ursinus students (roughly 1500)
+
+
+* Definition of independence
+
+
+Exercise:
+* Which of these events are independent?  Which of these events are disjoint?
+
+ 
+* The fire alarm goes of 1% of nights.  0.1% of nights, the fire alarm goes off and there is actually a fire.  What is the probability that there's actually a fire given the fire alarm is going off?
+
+
+
+--------------------------------------
+
+In class: 
+
+* Present Bayes rule
+* COVID testing example
+
+* Connection to models, definition of likelihood
+
+* The Bayesian chain rule, Naive bayes
+
+
+--------------------------------------
+[Due friday]
+Part 4: Markov Chains
+* Show implication of disjoint nature and independence assumption with venn diagram
+* Write out equation for a.a
+* Build a matrix, show matrix multiplication (column gives input, row gives output)
+
+
+------------------
+IN CLASS:
+
+
+Part 5: Bayes Rule Part 2
+* Definitiion of prior and posterior probabilities
+* Definition of likelihood
