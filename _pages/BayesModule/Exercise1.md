@@ -11,7 +11,7 @@ info:
   comments: "true"
   prev: "./Video2"
   points: 1.5
-  instructions: "<p>In this exercise, you will translate the code for a log posterior likelihood for bag of words Naive Bayes into code.  Fill in the method below to do this.  Loop through all of the keys in the counts dictionary and lookup the probabilities of the corresponding word in probs.  You can ignore the "ugly first term" of the multinomial count.</p><p>If you're on the network, it should submit automatically for you if you get it correct.  If you're not on the network, simply send me a screenshot of your correct solution and I'll put it in manually.</p>"
+  instructions: "<p>In this exercise, you will translate the code for a log posterior likelihood for bag of words Naive Bayes into code.  Fill in the method below to do this.  Loop through all of the keys in the counts dictionary and lookup the probabilities of the corresponding word in probs.  You can ignore the \"ugly first term\" of the multinomial count.</p><p>If you're on the network, it should submit automatically for you if you get it correct.  If you're not on the network, simply send me a screenshot of your correct solution and I'll put it in manually.</p>"
   packages: "numpy"
   goals:
     - Implement log posterior likelihood under the Naive Bayes Model
