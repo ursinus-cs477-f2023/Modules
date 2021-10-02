@@ -34,6 +34,9 @@ processor:
     - incorrectcheck: |
         pyodide.globals.res == "0.000"
       feedback: "Try again.  It seems like you're not adding anything to the probability.  Be sure to loop through all of the keys in counts and accumulate counts[key]*probs[key] over all keys"
+    - incorrectcheck: |
+        pyodide.globals.res == "-21.416"
+      feedback: "Try again.  You're close!  You should only add on the log of the prior once at the end!"
 
 files:
   - filename: "Student Code"
