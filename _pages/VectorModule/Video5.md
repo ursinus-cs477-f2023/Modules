@@ -1,8 +1,8 @@
 ---
 layout: module
 permalink: /VectorModule/Video5
-title: "CS 477: Vector Module: Projection"
-excerpt: "CS 477: Vector Module: Projection"
+title: "CS 477: Vector Module: Vector Projection"
+excerpt: "CS 477: Vector Module: Vector Projection"
 
 info:
   prev: "./Exercise4"
@@ -13,7 +13,7 @@ info:
 <p>
 Watch the videos below, and click the <code>Next</code> button to continue when you're finished.  
 </p>
-
+<p></p>
 <p>
 
 
@@ -21,7 +21,7 @@ Watch the videos below, and click the <code>Next</code> button to continue when 
 
 </p>
 
-
+<p></p>
 
 <h2>Notes</h2>
 
