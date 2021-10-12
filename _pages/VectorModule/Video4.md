@@ -11,7 +11,7 @@ info:
 ---
 
 <p>
-Please watch the videos below, and click the <code>Next</code> button to continue when you're finished.  
+Watch the videos below, and click the <code>Next</code> button to continue when you're finished.  
 </p>
 
 <p>

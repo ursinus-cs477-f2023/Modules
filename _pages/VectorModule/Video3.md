@@ -11,7 +11,7 @@ info:
 ---
 
 <p>
-Please watch the videos below, and click the <code>Next</code> button to continue when you're finished.  In the second video, you can stop at 5:40 if you want; I was just doing some examples of computing the dot product in Javascript
+Watch the videos below, and click the <code>Next</code> button to continue when you're finished.  In the second video, you can stop at 5:40 if you want; I was just doing some examples of computing the dot product in Javascript
 </p>
 
 <p>
