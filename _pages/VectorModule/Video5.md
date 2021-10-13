@@ -6,7 +6,7 @@ excerpt: "CS 477: Vector Module: Vector Projection"
 
 info:
   prev: "./Exercise4"
-  next: "./Exercise5"
+  next: "./Exercise5.html"
   comments: "true"
 ---
 
