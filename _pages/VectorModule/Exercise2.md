@@ -1,6 +1,6 @@
 ---
 layout: module
-permalink: /VectorModule/Video1
+permalink: /VectorModule/Exercise2
 title: "CS 477: Vector Module: Other Operations on Vectors"
 excerpt: "CS 477: Vector Module: Other Operations on Vectors"
 

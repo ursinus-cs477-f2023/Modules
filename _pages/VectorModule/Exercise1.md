@@ -1,6 +1,6 @@
 ---
 layout: module
-permalink: /VectorModule/Video1
+permalink: /VectorModule/Exercise1
 title: "CS 477: Vector Module: Definition of Euclidean Vectors"
 excerpt: "CS 477: Vector Module: Definition of Euclidean Vectors"
 
