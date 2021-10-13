@@ -5,8 +5,8 @@ title: "CS 477: Vector Module: Other Operations on Vectors"
 excerpt: "CS 477: Vector Module: Other Operations on Vectors"
 
 info:
-  next: "./Video2"
-  prev: "./Video3"
+  next: "./Video3"
+  prev: "./Video2"
   comments: "true"
 ---
 
