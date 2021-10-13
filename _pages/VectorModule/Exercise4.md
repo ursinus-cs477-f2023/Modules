@@ -24,11 +24,8 @@ processor:
   feedbackprocess: | 
     feedback.setValue(pyodide.globals.res);
   correctcheck: |
-    pyodide.globals.res == "12.141875500718468.12.36565070207807.10.198940720598285.5.068628568068711.-2.468893864937528.3.9150637481612796.12.778494901042718.6.652365351170923.-0.706076987359809.-15.148029337768001"
+    pyodide.globals.res == "1214_1236_1019_506_-246_391_1277_665_-70_-1514"
   incorrectchecks:
-    - incorrectcheck: |
-        pyodide.globals.res == "0.0.0.0.1.1.0.1.0.1"
-      feedback: "Try again.  You're close!  You just have your answer flipped"
     - incorrectcheck: |
         pyodide.globals.res == "0.0.0.0.0.0.0.0.0.0"
       feedback: "Try again.  It looks like you're always returning 0 for the dot product, but this is only true if the vectors are orthogonal."
@@ -79,6 +76,6 @@ files:
         for i in range(10):
           a = np.random.randn(d)
           b = np.random.randn(d)
-          res = "{}{}.".format(res, get_dotproduct(a, b))
+          res = "{}{}_".format(res, int(100*get_dotproduct(a, b)))
         res = res[0:-1]
 ---
