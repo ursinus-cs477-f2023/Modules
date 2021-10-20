@@ -3,14 +3,14 @@ layout: exercise_pyodide
 permalink: "MatrixModule/Exercise1"
 title: "CS 477: Matrix Module Exercise"
 excerpt: "CS 477: Matrix Module Exercise"
-canvasasmtid: "115141"
-canvaspoints: "1.5"
+canvasasmtid: "129978"
+canvaspoints: "2"
 canvashalftries: 5
 
 info:
   comments: "true"
   prev: "./Video2"
-  points: 1.5
+  points: 2
   instructions: "Modify the <code>get_special_vector</code> code to setup an N dimensional vector <b>v</b> so that, given an <b>m x n</b> matrix <b>A</b>, <b>A x v</b> has the effect of <b>averaging</b> the columns of <b>A</b>.  You may find the commands <code><a href = \"https://numpy.org/doc/stable/reference/generated/numpy.ones.html\">np.ones</a></code> and the <code><a href = \"https://numpy.org/doc/stable/reference/generated/numpy.shape.html\">shape</a></code> field of a numpy array to be helpful."
   packages: "numpy"
   goals:
