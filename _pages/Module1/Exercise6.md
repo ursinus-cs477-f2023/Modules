@@ -1,6 +1,6 @@
 ---
 layout: exercise_python
-permalink: "Module2/Exercise3"
+permalink: "Module1/Exercise6"
 title: "CS 477: Module 1: Classes Exercise 3"
 excerpt: "CS 477: Module 1: Classes Exercise 3"
 canvasasmtid: "183700"

@@ -10,6 +10,7 @@ canvashalftries: 5
 info:
   comments: "true"
   prev: "./Video5"
+  next: "./Video6"
   points: 1.5
   instructions: "<p>Define an instance method, <code>reset_birthday</code>, which resets the age of a <code>Person</code> object to be 0.</p>"
   goals:
