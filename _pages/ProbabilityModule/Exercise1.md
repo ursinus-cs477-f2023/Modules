@@ -10,4 +10,4 @@ info:
   comments: "true"
 ---
 
-<a href = "https://ursinus.instructure.com/courses/12848/quizzes/16171">Click here</a> to complete some questions on canvas, and then continue.  You will have unlimited retries, so keep trying until you get it 100% correct.
+<a href = "https://ursinus.instructure.com/courses/16260/quizzes/24099">Click here</a> to complete some questions on canvas, and then continue.  You will have unlimited retries, so keep trying until you get it 100% correct.

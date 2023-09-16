@@ -9,4 +9,4 @@ info:
   comments: "true"
 ---
 
-<a href = "https://ursinus.instructure.com/courses/12848/quizzes/16172">Click here</a> to complete some questions on canvas, and then you will be finished with this module.  You will have unlimited retries, so keep trying until you get it 100% correct.
+<a href = "https://ursinus.instructure.com/courses/16260/quizzes/24100">Click here</a> to complete some questions on canvas, and then you will be finished with this module.  You will have unlimited retries, so keep trying until you get it 100% correct.
