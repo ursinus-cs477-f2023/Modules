@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="348.95322mm"
+   height="397.09012mm"
+   viewBox="0 0 348.95322 397.09012"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="Viterbi.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.90583674"
+     inkscape:cx="942.22277"
+     inkscape:cy="906.34434"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.352316,-16.259254)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.269634"
+       y="24.300081"
+       id="text2036"><tspan
+         sodipodi:role="line"
+         id="tspan2034"
+         style="stroke-width:0.264583"
+         x="23.269634"
+         y="24.300081">Viterbi Algorithm (Offline)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.407141"
+       y="42.242874"
+       id="text4394"><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.407141"
+         y="42.242874"
+         id="tspan4780" /></text>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656"
+       cx="53.468941"
+       cy="159.38287"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7"
+       cx="53.715969"
+       cy="180.01636"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5"
+       cx="53.440304"
+       cy="199.5278"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-3"
+       cx="53.85955"
+       cy="221.05885"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-5"
+       cx="54.106579"
+       cy="241.69234"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-6"
+       cx="53.830914"
+       cy="261.2038"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="50.112972"
+       y="281.73224"
+       id="text40029"><tspan
+         sodipodi:role="line"
+         id="tspan40027"
+         style="stroke-width:0.264583"
+         x="50.112972"
+         y="281.73224">0</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38.908497,155.19477 39.814568,278.3818"
+       id="path40528" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-2"
+       cx="99.341873"
+       cy="159.81958"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-9"
+       cx="99.588898"
+       cy="180.45306"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-1"
+       cx="99.313232"
+       cy="199.96451"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-3-2"
+       cx="99.732483"
+       cy="221.49556"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-5-7"
+       cx="99.9795"
+       cy="242.12903"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-6-0"
+       cx="99.703842"
+       cy="261.6405"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="98.037788"
+       y="280.88431"
+       id="text42901"><tspan
+         sodipodi:role="line"
+         id="tspan42899"
+         style="stroke-width:0.264583"
+         x="98.037788"
+         y="280.88431">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="26.644817"
+       y="136.25862"
+       id="text100220"><tspan
+         sodipodi:role="line"
+         id="tspan100218"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="26.644817"
+         y="136.25862">HMM = Markov + Bayes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-226.80002"
+       y="37.10017"
+       id="text146742"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan146740"
+         style="stroke-width:0.264583"
+         x="-226.80002"
+         y="37.10017">states</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="142.4296"
+       y="224.46852"
+       id="text160616"><tspan
+         sodipodi:role="line"
+         id="tspan160614"
+         style="stroke-width:0.264583"
+         x="142.4296"
+         y="224.46852">k</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="194.94112"
+       y="204.40123"
+       id="text160616-8"><tspan
+         sodipodi:role="line"
+         id="tspan160614-7"
+         style="stroke-width:0.264583"
+         x="194.94112"
+         y="204.40123">j</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="245.98029"
+       y="90.986931"
+       id="text171961"><tspan
+         sodipodi:role="line"
+         id="tspan171959"
+         style="font-size:8.46667px;fill:#0000ff;fill-opacity:1;stroke-width:0.264583"
+         x="245.98029"
+         y="90.986931">p(x[t] = j | x[t-1] = k)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="122.13923"
+       y="211.52397"
+       id="text171961-9"><tspan
+         sodipodi:role="line"
+         id="tspan171959-2"
+         style="font-size:8.46667px;fill:#0000ff;fill-opacity:1;stroke-width:0.264583"
+         x="122.13923"
+         y="211.52397">p(x[t] = j | x[t-1] = k)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="239.27089"
+       y="77.588753"
+       id="text178171"><tspan
+         sodipodi:role="line"
+         id="tspan178169"
+         style="stroke-width:0.264583"
+         x="239.27089"
+         y="77.588753">transition model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="250.91214"
+       y="56.348652"
+       id="text2720"><tspan
+         sodipodi:role="line"
+         id="tspan2718"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="250.91214"
+         y="56.348652">p(y[t] | x[t]=j)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="240.33682"
+       y="45.003258"
+       id="text178171-3"><tspan
+         sodipodi:role="line"
+         id="tspan178169-6"
+         style="stroke-width:0.264583"
+         x="240.33682"
+         y="45.003258">observation model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="237.18642"
+       y="27.043734"
+       id="text9895"><tspan
+         sodipodi:role="line"
+         id="tspan9893"
+         style="stroke-width:0.264583"
+         x="237.18642"
+         y="27.043734">Problem Specific</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.38851"
+       y="41.489273"
+       id="text12793"><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.38851"
+         y="41.489273"
+         id="tspan15053">Goal: Given *all* measurement over all time,</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.38851"
+         y="52.072609"
+         id="tspan37044">compute the sequence X = [x[0], x[1], ..., x[T]]</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.38851"
+         y="62.655949"
+         id="tspan37046">of states that maximizes the probability given</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.38851"
+         y="73.239288"
+         id="tspan37048">all of the measurements</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="24.425833"
+       y="84.95639"
+       id="text39992"><tspan
+         sodipodi:role="line"
+         id="tspan39990"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="24.425833"
+         y="84.95639">X = argmax_(X') p(X' | y[0], y[1], ..., y[T])</tspan></text>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-2-7"
+       cx="145.84627"
+       cy="159.41444"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-9-5"
+       cx="146.09329"
+       cy="180.04793"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-1-3"
+       cx="145.81763"
+       cy="199.55937"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-3-2-5"
+       cx="146.23688"
+       cy="221.09042"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-5-7-6"
+       cx="146.4839"
+       cy="241.72389"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-6-0-2"
+       cx="146.20824"
+       cy="261.23538"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-2-2"
+       cx="197.81862"
+       cy="160.21428"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-9-7"
+       cx="198.06564"
+       cy="180.84776"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-1-0"
+       cx="197.78998"
+       cy="200.35921"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-3-2-9"
+       cx="198.20923"
+       cy="221.89026"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-5-7-3"
+       cx="198.45625"
+       cy="242.52373"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-6-0-6"
+       cx="198.18059"
+       cy="262.03519"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="116.16742"
+       y="221.65636"
+       id="text44690"><tspan
+         sodipodi:role="line"
+         id="tspan44688"
+         style="stroke-width:0.264583"
+         x="116.16742"
+         y="221.65636">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="141.68437"
+       y="282.83176"
+       id="text42901-2"><tspan
+         sodipodi:role="line"
+         id="tspan42899-6"
+         style="stroke-width:0.264583"
+         x="141.68437"
+         y="282.83176">t-1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="195.59738"
+       y="280.5206"
+       id="text47801"><tspan
+         sodipodi:role="line"
+         id="tspan47799"
+         style="stroke-width:0.264583"
+         x="195.59738"
+         y="280.5206">t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="229.70601"
+       y="159.42856"
+       id="text50327"><tspan
+         sodipodi:role="line"
+         id="tspan50325"
+         style="stroke-width:0.264583"
+         x="229.70601"
+         y="159.42856">Number of possible paths</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="229.70601"
+         y="172.65768"
+         id="tspan50329" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="229.70601"
+         y="185.88681"
+         id="tspan50331">(#states)^(T+1)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="28.890881"
+       y="305.09821"
+       id="text55591"><tspan
+         sodipodi:role="line"
+         id="tspan55589"
+         style="stroke-width:0.264583"
+         x="28.890881"
+         y="305.09821">Let L[j, t] be the probability of the maximum likelihood sequence</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="28.890881"
+         y="318.32733"
+         id="tspan60855">that ends at state j at time t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="30.344908"
+       y="345.00235"
+       id="text64129"><tspan
+         sodipodi:role="line"
+         id="tspan64127"
+         style="stroke-width:0.264583"
+         x="30.344908"
+         y="345.00235">Recurrence:</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="30.344908"
+         y="358.23148"
+         id="tspan106819">L[j, t] = (max_k L[k, t-1] * p(x[t]=j|x[t-1]=k)) * p(y[t] | x[t] = j)</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="30.344908"
+         y="371.4606"
+         id="tspan106823">B[j, t] = (argmax_k L[k, t-1] * p(x[t]=j|x[t-1]=k))</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="30.344908"
+         y="384.68973"
+         id="tspan106821">  </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="30.344908"
+         y="397.91885"
+         id="tspan99803">Base Case: L[j, -1] = prior probability of j</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 150.31415,222.56143 196.35333,200.2877"
+       id="path65800" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 53.63649,181.90542 46.69338,20.24141"
+       id="path77186" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.32987,202.14683 c 0.92926,2.20586 1.61161,2.61365 2.77611,0.57577 2.50269,-4.3797 4.28241,-7.59426 9.90551,-7.59426 0.64895,0 1.92934,-0.20854 2.53529,0 1.16565,0.40115 1.89817,1.28889 2.88315,1.75252 0.317,0.14921 0.49269,0.71263 0.82257,0.82259 2.62688,0.87563 4.7605,2.92428 7.29141,4.37052 1.41788,0.81021 5.58131,-0.69377 6.36702,0.87266 0.46616,0.92936 1.19992,1.59031 1.4568,2.61782 0.48698,1.94792 -0.17471,4.35078 0.29822,6.29389 0.13425,0.55161 0.65262,0.93862 0.87626,1.46043 0.15281,0.35655 -0.0984,1.01588 0,1.39471 0.37835,1.45664 2.87742,3.27641 4.08551,4.0818 0.40183,0.26788 0.30041,0.45061 0.58418,0.87626 0.25816,0.38724 1.47216,1.2383 1.74525,1.45677 0.69779,0.55823 1.62812,0.81366 2.23736,1.42298"
+       id="path77221" />
+  </g>
+</svg>

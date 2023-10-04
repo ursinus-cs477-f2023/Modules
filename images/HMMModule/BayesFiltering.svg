@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="244.0024mm"
+   height="305.35468mm"
+   viewBox="0 0 244.0024 305.35468"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="BayesFiltering.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.2810466"
+     inkscape:cx="407.47933"
+     inkscape:cy="1065.535"
+     inkscape:window-width="1915"
+     inkscape:window-height="1007"
+     inkscape:window-x="1920"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-10.069,-16.259254)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.269634"
+       y="24.300081"
+       id="text2036"><tspan
+         sodipodi:role="line"
+         id="tspan2034"
+         style="stroke-width:0.264583"
+         x="23.269634"
+         y="24.300081">Bayes Filtering</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.407141"
+       y="42.242874"
+       id="text4394"><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.407141"
+         y="42.242874"
+         id="tspan4780" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.764595"
+       y="38.144718"
+       id="text9996"><tspan
+         sodipodi:role="line"
+         id="tspan9994"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.764595"
+         y="38.144718">Goal: Estimate the probability of</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.764595"
+         y="48.728054"
+         id="tspan9998">being in a particular state j at time t</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.764595"
+         y="59.311394"
+         id="tspan10702">given all of the observations up to that point</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.764595"
+         y="69.89473"
+         id="tspan10806" /><tspan
+         sodipodi:role="line"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="23.764595"
+         y="80.478065"
+         id="tspan10808"> b_t[j] = p(x[t] = j | y[0], y[1], ..., y[t])</tspan></text>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656"
+       cx="53.468941"
+       cy="159.38287"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7"
+       cx="53.715969"
+       cy="180.01636"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5"
+       cx="53.440304"
+       cy="199.5278"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-3"
+       cx="53.85955"
+       cy="221.05885"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-5"
+       cx="54.106579"
+       cy="241.69234"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-6"
+       cx="53.830914"
+       cy="261.2038"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="46.430607"
+       y="282.37881"
+       id="text40029"><tspan
+         sodipodi:role="line"
+         id="tspan40027"
+         style="stroke-width:0.264583"
+         x="46.430607"
+         y="282.37881">t-1</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38.908497,155.19477 39.814568,278.3818"
+       id="path40528" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-2"
+       cx="99.341873"
+       cy="159.81958"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-9"
+       cx="99.588898"
+       cy="180.45306"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-1"
+       cx="99.313232"
+       cy="199.96451"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-3-2"
+       cx="99.732483"
+       cy="221.49556"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-7-5-7"
+       cx="99.9795"
+       cy="242.12903"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       id="path38656-5-6-0"
+       cx="99.703842"
+       cy="261.6405"
+       rx="5.1619086"
+       ry="5.1384869" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="98.037788"
+       y="280.88431"
+       id="text42901"><tspan
+         sodipodi:role="line"
+         id="tspan42899"
+         style="stroke-width:0.264583"
+         x="98.037788"
+         y="280.88431">t</tspan></text>
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path73754"
+       cx="54.660763"
+       cy="73.476196"
+       rx="1.2081599"
+       ry="1.1245033" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="24.512384"
+       y="96.804604"
+       id="text100220"><tspan
+         sodipodi:role="line"
+         id="tspan100218"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="24.512384"
+         y="96.804604">HMM = Markov + Bayes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="32.236893"
+       y="118.13494"
+       id="text103614"><tspan
+         sodipodi:role="line"
+         id="tspan103612"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="32.236893"
+         y="118.13494">b_t[j] = p(x[t] = j)p(y[t] | x[t] = j)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 58.511042,122.727 213.81163,122.09183"
+       id="path124178" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="69.57003"
+       y="108.41417"
+       id="text116840"><tspan
+         sodipodi:role="line"
+         id="tspan116838"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="69.57003"
+         y="108.41417">prior</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="108.9579"
+       y="108.85344"
+       id="text116840-6"><tspan
+         sodipodi:role="line"
+         id="tspan116838-0"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="108.9579"
+         y="108.85344">likelihood (observation model)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="89.259605"
+       y="131.07788"
+       id="text103614-6"><tspan
+         sodipodi:role="line"
+         id="tspan103612-2"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="89.259605"
+         y="131.07788">p(y[0], y[1], ..., y[t])</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="98.381233"
+       y="143.09868"
+       id="text116840-6-6"><tspan
+         sodipodi:role="line"
+         id="tspan116838-0-1"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="98.381233"
+         y="143.09868">evidence</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-226.80002"
+       y="37.10017"
+       id="text146742"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan146740"
+         style="stroke-width:0.264583"
+         x="-226.80002"
+         y="37.10017">states</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="98.101532"
+       y="200.55029"
+       id="text157408"><tspan
+         sodipodi:role="line"
+         id="tspan157406"
+         style="stroke-width:0.264583"
+         x="98.101532"
+         y="200.55029">j</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="51.200417"
+       y="223.58133"
+       id="text160616"><tspan
+         sodipodi:role="line"
+         id="tspan160614"
+         style="stroke-width:0.264583"
+         x="51.200417"
+         y="223.58133">k</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 59.160303,221.13831 94.067957,201.58824"
+       id="path169359" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="100.25977"
+       y="297.76279"
+       id="text171961"><tspan
+         sodipodi:role="line"
+         id="tspan171959"
+         style="font-size:8.46667px;fill:#0000ff;fill-opacity:1;stroke-width:0.264583"
+         x="100.25977"
+         y="297.76279">p(x[t] = j | x[t-1] = k)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="149.92786"
+       y="200.94861"
+       id="text178171"><tspan
+         sodipodi:role="line"
+         id="tspan178169"
+         style="stroke-width:0.264583"
+         x="149.92786"
+         y="200.94861">transition model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="32.747738"
+       y="233.2755"
+       id="text180077"><tspan
+         sodipodi:role="line"
+         id="tspan180075"
+         style="font-size:8.46667px;fill:#ff0000;fill-opacity:1;stroke-width:0.264583"
+         x="32.747738"
+         y="233.2755">b_t-1[k]</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 57.125896,198.83902 36.942061,2.74922"
+       id="path192522" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.586629,181.43416 35.481328,20.15408"
+       id="path192637" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 59.315307,242.44611 34.75265,-40.85787"
+       id="path192752" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="63.139145"
+       y="298.40451"
+       id="text180077-8"><tspan
+         sodipodi:role="line"
+         id="tspan180075-7"
+         style="font-size:8.46667px;fill:#ff0000;fill-opacity:1;stroke-width:0.264583"
+         x="63.139145"
+         y="298.40451">b_t-1[k]</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="22.254246"
+       y="298.30923"
+       id="text193765"><tspan
+         sodipodi:role="line"
+         id="tspan193763"
+         style="stroke-width:0.264583"
+         x="22.254246"
+         y="298.30923">sum_k</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="58.458199"
+       y="298.45187"
+       id="text196175"><tspan
+         sodipodi:role="line"
+         id="tspan196173"
+         style="stroke-width:0.264583"
+         x="58.458199"
+         y="298.45187">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="192.72264"
+       y="297.8147"
+       id="text196175-9"><tspan
+         sodipodi:role="line"
+         id="tspan196173-2"
+         style="stroke-width:0.264583"
+         x="192.72264"
+         y="297.8147">)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="9.3641338"
+       y="317.97656"
+       id="text103614-0"><tspan
+         sodipodi:role="line"
+         id="tspan103612-23"
+         style="font-size:7.76111px;stroke-width:0.264583"
+         x="9.3641338"
+         y="317.97656">b_t[j] = (sum_k (b_t-1[k] p(x[t] = j | x[t-1] = k))p(y[t] | x[t] = j)</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect203997"
+       width="155.77411"
+       height="11.26802"
+       x="38.125664"
+       y="309.84592" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect204123"
+       width="59.671612"
+       height="11.148752"
+       x="193.89978"
+       y="309.84592" />
+  </g>
+</svg>
