@@ -5,7 +5,7 @@ title: "CS 477: HMMs Part 3: Dynamic Programming Review, Dynamic Time Warping"
 excerpt: "CS 477: HMMs Part 3: Dynamic Programming Review, Dynamic Time Warping"
 
 info:
-  prev: "./Video3"
+  prev: "./Video2"
   next: "./Video4"
   comments: "true"
 ---
