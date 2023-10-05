@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "VectorModule/Exercise3"
 title: "CS 477: Vector Module: High Dimensional Vectors And Numpy"
 excerpt: "CS 477: Vector Module: High Dimensional Vectors And Numpy"
-canvasasmtid: "129630"
+canvasasmtid: "188336"
 canvaspoints: "1.5"
 canvashalftries: 5
 

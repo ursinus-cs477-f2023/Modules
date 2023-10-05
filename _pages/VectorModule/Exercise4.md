@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "VectorModule/Exercise4"
 title: "CS 477: Vector Module: High Dimensional Dot Products in Numpy"
 excerpt: "CS 477: Vector Module: High Dimensional Dot Products in Numpy"
-canvasasmtid: "129632"
+canvasasmtid: "188337"
 canvaspoints: "1.5"
 canvashalftries: 5
 

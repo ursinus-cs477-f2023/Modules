@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "VectorModule/Exercise5"
 title: "CS 477: Vector Module: High Dimensional Vector Projection in Numpy"
 excerpt: "CS 477: Vector Module: High Dimensional Vector Projection in Numpy"
-canvasasmtid: "129633"
+canvasasmtid: "188338"
 canvaspoints: "1.5"
 canvashalftries: 5
 

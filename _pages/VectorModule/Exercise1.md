@@ -11,5 +11,5 @@ info:
 ---
 
 <p>
-<a href = "https://ursinus.instructure.com/courses/12848/quizzes/16281">Click here</a> to complete a brief exercise on canvas, then continue on to the next video.
+<a href = "https://ursinus.instructure.com/courses/16260/quizzes/24265">Click here</a> to complete a brief exercise on canvas, then continue on to the next video.
 </p>
