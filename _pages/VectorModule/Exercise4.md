@@ -22,15 +22,15 @@ processor:
   incorrectfeedback: "Try again"
   submitformlink: false
   feedbackprocess: | 
-    feedback.setValue(pyodide.globals.res);
+    feedback.setValue(pyodide.globals.get("res"));
   correctcheck: |
-    pyodide.globals.res == "1214_1236_1019_506_-246_391_1277_665_-70_-1514"
+    pyodide.globals.get("res") == "1214.0_1237.0_1020.0_507.0_-247.0_392.0_1278.0_665.0_-71.0_-1515.0"
   incorrectchecks:
     - incorrectcheck: |
-        pyodide.globals.res == "0.0.0.0.0.0.0.0.0.0"
+        pyodide.globals.get("res") == "0_0_0_0_0_0_0_0_0_0"
       feedback: "Try again.  It looks like you're always returning 0 for the dot product, but this is only true if the vectors are orthogonal."
     - incorrectcheck: |
-        pyodide.globals.res == "3.484519407424569.3.516482717443393.3.1935780436053673.2.251361492090666.nan.1.9786520027941445.3.5747020716477502.2.579217972791544.nan.nan"
+        pyodide.globals.get("res") == "348.0_352.0_319.0_225.0_nan_198.0_357.0_258.0_nan_nan"
       feedback: "Try again.  Careful!  It looks like you're taking the square root of the dot product, but you don't need to do that."
 
 files:
@@ -76,6 +76,6 @@ files:
         for i in range(10):
           a = np.random.randn(d)
           b = np.random.randn(d)
-          res = "{}{}_".format(res, int(100*get_dotproduct(a, b)))
+          res = "{}{}_".format(res, np.round(100*get_dotproduct(a, b)))
         res = res[0:-1]
 ---

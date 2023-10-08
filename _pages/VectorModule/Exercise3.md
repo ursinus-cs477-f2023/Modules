@@ -22,15 +22,15 @@ processor:
   incorrectfeedback: "Try again"
   submitformlink: false
   feedbackprocess: | 
-    feedback.setValue(pyodide.globals.res);
+    feedback.setValue(pyodide.globals.get("res"));
   correctcheck: |
-    pyodide.globals.res == "1.1.1.1.0.0.1.0.1.0"
+    pyodide.globals.get("res") == "1.1.1.1.0.0.1.0.1.0"
   incorrectchecks:
     - incorrectcheck: |
-        pyodide.globals.res == "0.0.0.0.1.1.0.1.0.1"
+        pyodide.globals.get("res") == "0.0.0.0.1.1.0.1.0.1"
       feedback: "Try again.  You're close!  You just have your answer flipped"
     - incorrectcheck: |
-        pyodide.globals.res == "0.0.0.0.0.0.0.0.0.0"
+        pyodide.globals.get("res") == "0.0.0.0.0.0.0.0.0.0"
       feedback: "Try again.  It looks like you're always saying a is closer each time, but check b as well, because sometimes b is closer"
 
 files:

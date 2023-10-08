@@ -19,10 +19,7 @@ mynetid: ctralie
 <script src="{{site.baseurl}}/assets/js/util.js"></script>
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
 <script src="{{site.baseurl}}/assets/js/wav.js"></script>
-<script type="text/javascript">
-    window.languagePluginUrl = 'https://cdn.jsdelivr.net/pyodide/v0.16.1/full/';
-</script>
-<script src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
 
 <style>
 .image_off, #home:hover .image_on{
@@ -288,114 +285,121 @@ def save_audio_js(arr, sr):
 
         // Load the required packages
         let packages = "{{page.info.packages}}".split(",");
-        let pkgPromise = languagePluginLoader.then(() => {
-            pyodide.loadPackage(packages).then(() => {
-                feedback.setValue("Importing modules {{page.info.packages}}...");
-                let importCode = "";
-                for (let i = 0; i < packages.length; i++) {
-                    importCode += "import " + packages[i] + "\n";
-                }
-                pyodide.runPython(importCode);
-                pkgPromise.ready = true;
-                feedback.setValue("Ready.");
-        });});
+        let pyodide = null;
+        let pyodideLoaded = false;
+
+        async function setupPyodide() {
+            pyodide = await loadPyodide();
+            feedback.setValue("Importing modules {{page.info.packages}}...");
+            for (let i = 0; i < packages.length; i++) {
+                await pyodide.loadPackage(packages[i]);
+            }
+            feedback.setValue("Finished loading modules.  You can run your code now.");
+            pyodideLoaded = true;
+        }
+        let pyodidePromise = new Promise((resolve) => {
+            setupPyodide().then(()=>{
+                resolve();
+            });
+        });
 
         feedback.setValue("Loading packages {{page.info.packages}}...");
         let audioStr = "";
         function runCode() {
-            if (!('ready' in pkgPromise)) {
-                pkgPromise.then(runCode);
-                return;
+            if (!pyodideLoaded) {
+                setupPyodide.then(() => {runCode();});
             }
-            try {
-                let resultStr = "Code Finished. ";
-                numAttempts++;
-                let student_code = "";
-                for (var i in editors) {
-                    student_code += editors[i].getValue();
-                    student_code += "\n";
-                }
-                student_code += mainEditor.getValue();
-                pyodide.runPython(student_code);
+            else {
+                try {
+                    let resultStr = "Code Finished. ";
+                    numAttempts++;
+                    let student_code = "";
+                    for (var i in editors) {
+                        student_code += editors[i].getValue();
+                        student_code += "\n";
+                    }
+                    student_code += mainEditor.getValue();
+                    pyodide.runPython(student_code);
 
-                function jump(h) {
-                    let top = document.getElementById(h).offsetTop;
-                    window.scrollTo(0, top);
-                }
-                
-                audioStr = "";
-                let process = new Promise(resolve => {
-                    let doingFigure = false;
-                    if (pyodide.globals.img_str.length > 0) {
-                        doingFigure = true;
-                        figureDOM.style.display = "block";
-                        document.getElementById("pyplotfigure").src=pyodide.globals.img_str;
-                        resultStr += "Figure plotted below. ";
-                        jump("figure");
+                    function jump(h) {
+                        let top = document.getElementById(h).offsetTop;
+                        window.scrollTo(0, top);
                     }
-                    else {
-                        figureDOM.style.display = "none";
-                    }
-                    let doingAudio = false;
-                    if (pyodide.globals.audio_sav_arr.length > 0) {
-                        doingAudio = true;
-                        audioDOM.style.display = "block";
-                        writeWavAudioSource(audioElem, pyodide.globals.audio_sav_arr, pyodide.globals.audio_sav_sr).then(function(s) {
-                            audioStr = s;
-                            resultStr += "Audio output below. ";
-                            feedback.setValue(resultStr);
-                            jump("audio");
+                    
+                    audioStr = "";
+                    let process = new Promise(resolve => {
+                        let doingFigure = false;
+                        if (pyodide.globals.get("img_str").length > 0) {
+                            doingFigure = true;
+                            figureDOM.style.display = "block";
+                            document.getElementById("pyplotfigure").src=pyodide.globals.get("img_str");
+                            resultStr += "Figure plotted below. ";
+                            jump("figure");
+                        }
+                        else {
+                            figureDOM.style.display = "none";
+                        }
+                        let doingAudio = false;
+                        if (pyodide.globals.get("audio_sav_arr").length > 0) {
+                            doingAudio = true;
+                            audioDOM.style.display = "block";
+                            writeWavAudioSource(audioElem, pyodide.globals.get("audio_sav_arr"), pyodide.globals.get("audio_sav_sr")).then(function(s) {
+                                audioStr = s;
+                                resultStr += "Audio output below. ";
+                                feedback.setValue(resultStr);
+                                jump("audio");
+                                resolve();
+                            });
+                        }
+                        else {
+                            audioDOM.style.display = "none";
+                        }
+                        feedback.setValue(resultStr);
+                        if (!doingAudio) {
                             resolve();
-                        });
-                    }
-                    else {
-                        audioDOM.style.display = "none";
-                    }
-                    feedback.setValue(resultStr);
-                    if (!doingAudio) {
-                        resolve();
-                    }
-                });
-                
-                process.then(() => {
-                    {{ page.processor.feedbackprocess | strip }}
-                    if ({{ page.processor.correctcheck | strip}}) {
-                        correctlyAnswered = true;
-                        correctArea.innerHTML = "<h3><font color = #00AA00>{{ page.processor.correctfeedback | strip}}</font></h3>";
-                        <!-- Setting a page.processor.submitformlink in the markdown will pop up an iframe with a page of your choice -->
-                        {% if page.processor.submitformlink and page.processor.submitformlink != false %}
-                        correctArea.innerHTML += `
-                        <iframe src = "{{ page.processor.submitformlink | strip }}" width=800 height=500>
-                        `;
+                        }
+                    });
+                    
+                    process.then(() => {
+                        {{ page.processor.feedbackprocess | strip }}
+                        if ({{ page.processor.correctcheck | strip}}) {
+                            correctlyAnswered = true;
+                            correctArea.innerHTML = "<h3><font color = #00AA00>{{ page.processor.correctfeedback | strip}}</font></h3>";
+                            <!-- Setting a page.processor.submitformlink in the markdown will pop up an iframe with a page of your choice -->
+                            {% if page.processor.submitformlink and page.processor.submitformlink != false %}
+                            correctArea.innerHTML += `
+                            <iframe src = "{{ page.processor.submitformlink | strip }}" width=800 height=500>
+                            `;
+                            {% endif %}
+                            
+                            postCode(true, false);
+                        }
+                        {% if page.processor.incorrectchecks %}
+                        {% for check in page.processor.incorrectchecks %}
+                        else if ({{ check.incorrectcheck | strip}}) {
+                            correctArea.innerHTML = "<h3><font color = red>{{ check.feedback | strip }}</font></h3>";
+                        }
+                        {% endfor %}
                         {% endif %}
-                        
-                        postCode(true, false);
-                    }
-                    {% if page.processor.incorrectchecks %}
-                    {% for check in page.processor.incorrectchecks %}
-                    else if ({{ check.incorrectcheck | strip}}) {
-                        correctArea.innerHTML = "<h3><font color = red>{{ check.feedback | strip }}</font></h3>";
-                    }
-                    {% endfor %}
-                    {% endif %}
-                    else {
-                        correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
-                    }
-                });
+                        else {
+                            correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
+                        }
+                    });
+                }
+                catch(err) {
+                    correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
+                    feedback.setValue("Error: " + err.message);
+                }
+
+                {% if page.canvashalftries %}
+                if (!correctlyAnswered && numAttempts == {{ page.canvashalftries }}) {
+                    postCode(false, true);
+                }
+
+
+                {% endif %}
+
             }
-            catch(err) {
-                correctArea.innerHTML = "<h3><font color = red>{{ page.processor.incorrectfeedback | strip }}</font></h3>";
-                feedback.setValue("Error: " + err.message);
-            }
-
-            {% if page.canvashalftries %}
-            if (!correctlyAnswered && numAttempts == {{ page.canvashalftries }}) {
-                postCode(false, true);
-            }
-
-
-            {% endif %}
-
         }
         </script>        
         

@@ -21,21 +21,21 @@ processor:
   incorrectfeedback: "Try again"
   submitformlink: false
   feedbackprocess: | 
-    feedback.setValue(pyodide.globals.res);
+    feedback.setValue(pyodide.globals.get("res"));
   correctcheck: |
-    pyodide.globals.res == "-18.644"
+    pyodide.globals.get("res") == "-18.644"
   incorrectchecks:
     - incorrectcheck: |
-        pyodide.globals.res == "-17.258"
+        pyodide.globals.get("res") == "-17.258"
       feedback: "Try again.  You're close!  Don't forget to add on the log of the prior!"
     - incorrectcheck: |
-        pyodide.globals.res == "-17.008"
+        pyodide.globals.get("res") == "-17.008"
       feedback: "Try again.  You're close!  Don't forget to take the log of the prior!"
     - incorrectcheck: |
-        pyodide.globals.res == "0.000"
+        pyodide.globals.get("res") == "0.000"
       feedback: "Try again.  It seems like you're not adding anything to the probability.  Be sure to loop through all of the keys in counts and accumulate counts[key]*probs[key] over all keys"
     - incorrectcheck: |
-        pyodide.globals.res == "-21.416"
+        pyodide.globals.get("res") == "-21.416"
       feedback: "Try again.  You're close!  You should only add on the log of the prior once at the end!"
 
 files:
