@@ -56,7 +56,7 @@ files:
               
               Return
               ------
-              0 if v is closer to a and 1 if vector is closer to b
+              Dot product between a and b
               """
               res = 0
               ## TODO: Fill this in
