@@ -3,7 +3,7 @@ layout: exercise_pyodide
 permalink: "MatrixModule/Exercise1"
 title: "CS 477: Matrix Module Exercise"
 excerpt: "CS 477: Matrix Module Exercise"
-canvasasmtid: "129978"
+canvasasmtid: "188545"
 canvaspoints: "2"
 canvashalftries: 5
 

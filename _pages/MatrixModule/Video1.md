@@ -10,7 +10,7 @@ info:
 ---
 
 <p>
-Below is a video I made for my <a href = "https://ursinus-cs472a-s2021.github.io/CoursePage/index.html">digital music processing</a> class last spring.  Watch the first 7 minutes and 30 seconds of the video (the rest is about "spectrograms," which we'll see an application of in a homework, but which you don't need to spend time on now).  When you're finished, click the <code>Next</code> button to continue.
+Below is a video I made for my <a href = "https://ursinus-cs472a-s2021.github.io/CoursePage/index.html">digital music processing</a> class last spring.  Watch the first 7 minutes and 30 seconds of the video (the rest is about "spectrograms," which is a matrix describing the time/frequency content of audio).  When you're finished, click the <code>Next</code> button to continue.
 </p>
 
 <p></p>
