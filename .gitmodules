@@ -1,0 +1,3 @@
+[submodule "images/LogisticRegression/TorchTest"]
+	path = images/LogisticRegression/TorchTest
+	url = https://github.com/ursinus-cs477-f2023/TorchTest.git
