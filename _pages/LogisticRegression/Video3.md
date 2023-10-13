@@ -1,8 +1,8 @@
 ---
 layout: module
 permalink: /LogisticRegression/Video3
-title: "CS 477 Data-Driven Learning: Logistic Loss And Gradient Descent"
-excerpt: "CS 477 Data-Driven Learning: Logistic Loss And Gradient Descent"
+title: "CS 477 Neural Nets Module 1: Logistic Loss And Gradient Descent"
+excerpt: "CS 477 Neural Nets Module 1: Logistic Loss And Gradient Descent"
 
 info:
   prev: "./Exercise3"
@@ -11,7 +11,7 @@ info:
 ---
 
 <p>
-Watch the two videos below, then complete the exercise at <a href = "https://ursinus.instructure.com/courses/15546/quizzes/22307">this link</a> on canvas.  When you're finished, click the <code>Next</code> button to continue.
+Watch the two videos below, then complete the exercise at <a href = "https://ursinus.instructure.com/courses/16260/quizzes/24306">this link</a> on canvas.  When you're finished, click the <code>Next</code> button to continue.
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EAyjKhPR0FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

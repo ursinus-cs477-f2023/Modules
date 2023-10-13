@@ -1,8 +1,8 @@
 ---
 layout: module
 permalink: /LogisticRegression/Exercise3
-title: "CS 477 Data-Driven Learning: Google Colab Test"
-excerpt: "CS 477 Data-Driven Learning: Google Colab Test"
+title: "CS 477 Neural Nets Module 1: Google Colab Test"
+excerpt: "CS 477 Neural Nets Module 1: Google Colab Test"
 
 info:
   prev: "./Video2"
@@ -11,11 +11,6 @@ info:
 ---
 
 <p>
-Sign up for a google account if you don't have one, then go to <a href = "https://colab.research.google.com/">https://colab.research.google.com/</a> and sign in with your account.  Then, select the "GitHub" tab and paste in the url <a href = "https://github.com/ursinus-cs372-s2023/ColabTest">https://github.com/ursinus-cs372-s2023/ColabTest</a>, and select the notebook <code>2DSeparate.ipynb</code>
-</p>
+The purpose of this exercise is to get a software package called pytorch setup on your computer that we're going to use for neural nets.  Download the notebook <code>2DSeparate.ipynb</code> at <a href = "https://github.com/ursinus-cs477-f2023/TorchTest/archive/refs/heads/main.zip">this link</a>.  Then, run all of the cells, and type what you see at the bottom as a response to the canvas prompt at <a href = "https://ursinus.instructure.com/courses/16260/assignments/188712">this link</a>
 
-<img src = "../images/LogisticRegression/ColabTest.png">
-
-<p>
-Then, run all of the cells, and type what you see at the bottom at <a href = "https://ursinus.instructure.com/courses/15546/assignments/173607">this canvas link</a>
 </p>

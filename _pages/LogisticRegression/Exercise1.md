@@ -1,9 +1,9 @@
 ---
 layout: exercise_pyodide
 permalink: "LogisticRegression/Exercise1"
-title: "CS 477: Data-Driven Learning: Grid Search"
-excerpt: "CS 477: Data-Driven Learning: Grid Search"
-canvasasmtid: "173603"
+title: "CS 477: Neural Nets Module 1: Grid Search"
+excerpt: "CS 477: Neural Nets Module 1: Grid Search"
+canvasasmtid: "188713"
 canvaspoints: "1.5"
 canvashalftries: 5
 

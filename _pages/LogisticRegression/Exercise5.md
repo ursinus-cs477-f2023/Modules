@@ -1,9 +1,9 @@
 ---
 layout: exercise_pyodide
 permalink: "LogisticRegression/Exercise5"
-title: "CS 477: Data-Driven Learning: Dataset Indexing"
-excerpt: "CS 477: Data-Driven Learning: Dataset Indexing"
-canvasasmtid: "173763"
+title: "CS 477: Neural Nets Module 1: Dataset Indexing"
+excerpt: "CS 477: Neural Nets Module 1: Dataset Indexing"
+canvasasmtid: "188716"
 canvaspoints: "1.5"
 canvashalftries: 5
 

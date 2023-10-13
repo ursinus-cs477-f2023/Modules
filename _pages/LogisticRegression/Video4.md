@@ -1,8 +1,8 @@
 ---
 layout: module
 permalink: /LogisticRegression/Video4
-title: "CS 477 Data-Driven Learning: PyTorch Datasets"
-excerpt: "CS 477 Data-Driven Learning: PyTorch Datasets"
+title: "CS 477 Neural Nets Module 1: PyTorch Datasets"
+excerpt: "CS 477 Neural Nets Module 1: PyTorch Datasets"
 
 info:
   prev: "./Video3"

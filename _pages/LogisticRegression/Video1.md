@@ -1,8 +1,8 @@
 ---
 layout: module
 permalink: /LogisticRegression/Video1
-title: "CS 477 Data-Driven Learning: Overview of Supervised Learning"
-excerpt: "CS 477 Data-Driven Learning: Overview of Supervised Learning"
+title: "CS 477 Neural Nets Module 1: Overview of Supervised Learning"
+excerpt: "CS 477 Neural Nets Module 1: Overview of Supervised Learning"
 
 info:
   next: "./Exercise1"
