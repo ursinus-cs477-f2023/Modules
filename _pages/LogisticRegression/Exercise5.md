@@ -24,13 +24,13 @@ processor:
   feedbackprocess: | 
     
   correctcheck: |
-    pyodide.globals.out == ".1.4.9.16.25.36.49.64.81.100."
+    pyodide.globals.get("out") == ".1.4.9.16.25.36.49.64.81.100."
   incorrectchecks:
     - incorrectcheck: |
-        pyodide.globals.out == "."
+        pyodide.globals.get("out") == "."
       feedback: "Try again.  It looks like you might not be returning the correct length.  Try returning <code>self.N</code>" 
     - incorrectcheck: |
-        pyodide.globals.out == ".0.1.4.9.16.25.36.49.64.81." 
+        pyodide.globals.get("out") == ".0.1.4.9.16.25.36.49.64.81." 
       feedback: "Try again.  You're very close!  Just be sure that the element at index 0 is 1, not 0." 
 
 files:

@@ -25,10 +25,10 @@ processor:
     let ref = 0.5375;
     let tol = 0.1
   correctcheck: |
-    Math.abs(pyodide.globals.res - ref) < tol
+    Math.abs(pyodide.globals.get("res") - ref) < tol
   incorrectchecks:
     - incorrectcheck: |
-        pyodide.globals.res == 0
+        pyodide.globals.get("res") == 0
       feedback: "Try again.  It looks like you're still returning c=0, but you need to find the c that minimizes the loss function" 
 
 files:
