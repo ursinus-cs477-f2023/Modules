@@ -5,7 +5,7 @@ title: "CS 477 Neural Nets Module 1: Logistic Loss And Gradient Descent"
 excerpt: "CS 477 Neural Nets Module 1: Logistic Loss And Gradient Descent"
 
 info:
-  prev: "./Exercise3"
+  prev: "./Video2"
   next: "./Video4"
   comments: "true"
 ---

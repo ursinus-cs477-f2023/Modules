@@ -6,7 +6,7 @@ excerpt: "CS 477 Neural Nets Module 1: Logistic Perceptron"
 
 info:
   prev: "./Exercise1"
-  next: "./Exercise3"
+  next: "./Video3"
   comments: "true"
 ---
 
