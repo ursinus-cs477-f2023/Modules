@@ -1,0 +1,9 @@
+* Video on softmax + cross-entropy to review class content
+- Define softmax, show properties
+- Define one-hot vector
+- Talk about entropy, cross-entropy
+
+Exercise: Implement softmax
+
+
+
