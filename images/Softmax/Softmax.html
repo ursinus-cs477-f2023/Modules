@@ -14642,7 +14642,7 @@ Output of softmax as estimated probabilities</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>For multi-class classification, we're going to have a multidimensional "ground truth" $y$ that we aspire to.  So I'll define something called the "one-hot vector" $\vec{y}^k$ as</p>
-<h3 id="$%5Cvec%7By%7D%5Ek_i-=-%5Cleft%5C%7B-%5Cbegin%7Barray%7D%7Bcc%7D-1-&amp;-i-=-k-%5C%5C-0-&amp;-%5Ctext%7Botherwise%7D-%5Cend%7Barray%7D-%5Cright%5C%7D-$">$\vec{y}^k_i = \left\{ \begin{array}{cc} 1 &amp; i = k \\ 0 &amp; \text{otherwise} \end{array} \right\} $<a class="anchor-link" href="#$%5Cvec%7By%7D%5Ek_i-=-%5Cleft%5C%7B-%5Cbegin%7Barray%7D%7Bcc%7D-1-&amp;-i-=-k-%5C%5C-0-&amp;-%5Ctext%7Botherwise%7D-%5Cend%7Barray%7D-%5Cright%5C%7D-$">&#182;</a></h3><p>(this is also referred to as the standard basis vector $\vec{e}_i$ in $k$-dimensional Euclidean space)</p>
+<h3 id="$%5Cvec%7By%7D%5Ek_i-=-%5Cleft%5C%7B-%5Cbegin%7Barray%7D%7Bcc%7D-1-&amp;-i-=-k-%5C%5C-0-&amp;-%5Ctext%7Botherwise%7D-%5Cend%7Barray%7D-%5Cright%5C%7D-$">$\vec{y}^k_i = \left\{ \begin{array}{cc} 1 &amp; i = k \\ 0 &amp; \text{otherwise} \end{array} \right\} $<a class="anchor-link" href="#$%5Cvec%7By%7D%5Ek_i-=-%5Cleft%5C%7B-%5Cbegin%7Barray%7D%7Bcc%7D-1-&amp;-i-=-k-%5C%5C-0-&amp;-%5Ctext%7Botherwise%7D-%5Cend%7Barray%7D-%5Cright%5C%7D-$">&#182;</a></h3><p>(this is also referred to as the "standard basis vector" $\vec{e}_i$ in $k$-dimensional Euclidean space)</p>
 <p>Ex) $\vec{y}^6 = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]$</p>
 
 </div>
@@ -14780,7 +14780,9 @@ NOTE: A PMF is an array of possible outcomes with the probabilities</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Update-Rules">Update Rules<a class="anchor-link" href="#Update-Rules">&#182;</a></h1><h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(--%5Csum_%7Bi%7D-%5Cvec%7By%7D%5Ek_i-%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-)-%5Cright)$">$\frac{\partial}{\partial u_i} \left( -\sum_{i} \vec{y}^k_i \log( \sigma_{sm}(\vec{u})_i ) \right)$<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(--%5Csum_%7Bi%7D-%5Cvec%7By%7D%5Ek_i-%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-)-%5Cright)$">&#182;</a></h2>
+<h1 id="Update-Rules">Update Rules<a class="anchor-link" href="#Update-Rules">&#182;</a></h1><p>We want the derivatites of the BCE loss with respect to different components $u_i$ of the input $\vec{u}$</p>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(--%5Csum_%7Bi%7D-%5Cvec%7By%7D%5Ek_i-%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-)-%5Cright)$">$\frac{\partial}{\partial u_i} \left( -\sum_{i} \vec{y}^k_i \log( \sigma_{sm}(\vec{u})_i ) \right)$<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(--%5Csum_%7Bi%7D-%5Cvec%7By%7D%5Ek_i-%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-)-%5Cright)$">&#182;</a></h2><p>There's only one component that actually matters when we're using the one-hot vector $\vec{y}^k_i$</p>
+
 </div>
 </div>
 </div>
@@ -14803,7 +14805,7 @@ NOTE: A PMF is an array of possible outcomes with the probabilities</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Case-1:">Case 1:<a class="anchor-link" href="#Case-1:">&#182;</a></h3><p>Let's suppose that $i = k$</p>
-<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)$">$\frac{\partial}{\partial u_k} \left( - \log( \sigma_{sm}(\vec{u})_k ) \right)$<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)$">&#182;</a></h2>
+
 </div>
 </div>
 </div>
@@ -14815,7 +14817,7 @@ NOTE: A PMF is an array of possible outcomes with the probabilities</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>By the chain rule, we have</p>
-<h2 id="$--%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Cleft(-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%5Cright)-$">$ -\frac{1}{\sigma_{sm}(\vec{u})_k }  \left( \frac{\partial}{\partial u_k} \sigma_{sm}(\vec{u})_k \right) $<a class="anchor-link" href="#$--%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Cleft(-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%5Cright)-$">&#182;</a></h2>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)-=---%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Cleft(-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%5Cright)-$">$\frac{\partial}{\partial u_k} \left( - \log( \sigma_{sm}(\vec{u})_k ) \right) =  -\frac{1}{\sigma_{sm}(\vec{u})_k }  \left( \frac{\partial}{\partial u_k} \sigma_{sm}(\vec{u})_k \right) $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)-=---%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Cleft(-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%5Cright)-$">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14826,7 +14828,8 @@ NOTE: A PMF is an array of possible outcomes with the probabilities</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">$\frac{\partial}{\partial u_k} \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">&#182;</a></h2>
+<p>Let's look at the derivative of the inner:</p>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k--=-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">$\frac{\partial}{\partial u_k} \sigma_{sm}(\vec{u})_k  = \frac{\partial}{\partial u_k} \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k--=-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14838,7 +14841,7 @@ NOTE: A PMF is an array of possible outcomes with the probabilities</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Quotient Rule: 
-$f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
+$f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))/(Q(x)^2)$</p>
 
 </div>
 </div>
@@ -14876,7 +14879,8 @@ $f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Therefore,</p>
-<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-=-%5Cfrac%7Be%5E%7Bu_k%7D(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)%5E2%7D-=-%5Cleft(-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-%5Cleft(-%5Cfrac%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-=-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">$\frac{\partial}{\partial u_k} \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} = \frac{e^{u_k}(\sum_{j = 1}^{L} e^{u_j}) - e^{u_k} e^{u_k}}{(\sum_{j = 1}^{L} e^{u_j})^2} = \left( \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} \right) \left( \frac{(\sum_{j = 1}^{L} e^{u_j}) - e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} \right) = \sigma_{sm}(\vec{u})_k (1 - \sigma_{sm}(\vec{u})_k) $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-=-%5Cfrac%7Be%5E%7Bu_k%7D(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)%5E2%7D-=-%5Cleft(-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-%5Cleft(-%5Cfrac%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-=-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">&#182;</a></h2>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-=-%5Cfrac%7Be%5E%7Bu_k%7D(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)%5E2%7D-=-%5Cleft(-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-%5Cleft(-%5Cfrac%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-=-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">$\frac{\partial}{\partial u_k} \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} = \frac{e^{u_k}(\sum_{j = 1}^{L} e^{u_j}) - e^{u_k} e^{u_k}}{(\sum_{j = 1}^{L} e^{u_j})^2} = \left( \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} \right) \left( \frac{(\sum_{j = 1}^{L} e^{u_j}) - e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} \right) = \sigma_{sm}(\vec{u})_k (1 - \sigma_{sm}(\vec{u})_k) $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_k%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-=-%5Cfrac%7Be%5E%7Bu_k%7D(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)%5E2%7D-=-%5Cleft(-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-%5Cleft(-%5Cfrac%7B(%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D)---e%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-%5Cright)-=-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">&#182;</a></h2><p>Plugging this back into the full derivative of BCE, we get</p>
+
 </div>
 </div>
 </div>
@@ -14887,7 +14891,8 @@ $f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="$--%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">$ -\frac{1}{\sigma_{sm}(\vec{u})_k }  \sigma_{sm}(\vec{u})_k (1 - \sigma_{sm}(\vec{u})_k) $<a class="anchor-link" href="#$--%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">&#182;</a></h2>
+<h2 id="$--%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">$ -\frac{1}{\sigma_{sm}(\vec{u})_k }  \sigma_{sm}(\vec{u})_k (1 - \sigma_{sm}(\vec{u})_k) $<a class="anchor-link" href="#$--%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-%7D--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)-$">&#182;</a></h2><p>which simplifies to</p>
+
 </div>
 </div>
 </div>
@@ -14910,7 +14915,8 @@ $f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>For the hot $k$, the update rule is</p>
-<h3 id="$u_k-%5Cgets-u_k-+-%5Calpha(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)$">$u_k \gets u_k + \alpha(1 - \sigma_{sm}(\vec{u})_k)$<a class="anchor-link" href="#$u_k-%5Cgets-u_k-+-%5Calpha(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)$">&#182;</a></h3>
+<h3 id="$u_k-%5Cgets-u_k-+-%5Calpha(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)$">$u_k \gets u_k + \alpha(1 - \sigma_{sm}(\vec{u})_k)$<a class="anchor-link" href="#$u_k-%5Cgets-u_k-+-%5Calpha(1---%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k)$">&#182;</a></h3><p>In other words, if we're not big enough at our softmax output, we should nudge $u_k$ to the right.  This will make $\frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}}$ closer to 1</p>
+
 </div>
 </div>
 </div>
@@ -14923,7 +14929,7 @@ $f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Case-2:">Case 2:<a class="anchor-link" href="#Case-2:">&#182;</a></h3><p>Let's suppose that $i \neq k$</p>
 <p>This is a "cold zero"</p>
-<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)$">$\frac{\partial}{\partial u_i} \left( - \log( \sigma_{sm}(\vec{u})_k ) \right)$<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)$">&#182;</a></h2>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)-=---%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k%7D-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k$">$\frac{\partial}{\partial u_i} \left( - \log( \sigma_{sm}(\vec{u})_k ) \right) = - \frac{1}{\sigma_{sm}(\vec{u})_k} \frac{\partial}{\partial u_i} \sigma_{sm}(\vec{u})_k$<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cleft(---%5Clog(-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-)-%5Cright)-=---%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k%7D-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k$">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14934,18 +14940,8 @@ $f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="$---%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k%7D-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-$">$ - \frac{1}{\sigma_{sm}(\vec{u})_k} \frac{\partial}{\partial u_i} \sigma_{sm}(\vec{u})_k $<a class="anchor-link" href="#$---%5Cfrac%7B1%7D%7B%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k%7D-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-$">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">$\frac{\partial}{\partial u_i} \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">&#182;</a></h2>
+<p>Let's take the derivative of the inner using the quotient rule again</p>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-=-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">$\frac{\partial}{\partial u_i} \sigma_{sm}(\vec{u})_k = \frac{\partial}{\partial u_i} \frac{e^{u_k}}{\sum_{j = 1}^{L} e^{u_j}} $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-=-%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Cfrac%7Be%5E%7Bu_k%7D%7D%7B%5Csum_%7Bj-=-1%7D%5E%7BL%7D-e%5E%7Bu_j%7D%7D-$">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14969,9 +14965,12 @@ $f(x) = P(x)/Q(x),  f'(x) = (P'(x)Q(x) - Q'(x)P(x))(Q(x)^2)$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>$P'(u_i) = 0$
-$Q'(u_i) = e^{u_i}$</p>
-<h2 id="$%5Cfrac%7B-e%5E%7Bu_i%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj=1%7D%5EL-e%5E%7Bu_j%7D)%5E2%7D-=--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k---$">$\frac{-e^{u_i} e^{u_k}}{(\sum_{j=1}^L e^{u_j})^2} = -\sigma_{sm}(\vec{u})_i \sigma_{sm}(\vec{u})_k   $<a class="anchor-link" href="#$%5Cfrac%7B-e%5E%7Bu_i%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj=1%7D%5EL-e%5E%7Bu_j%7D)%5E2%7D-=--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k---$">&#182;</a></h2>
+<p>Because we're taking the derivative with respect to $u_i$, and $i \neq k$, we treat $u_k$ as a constant.  Therefore,</p>
+<p>$P'(u_i) = 0$</p>
+<p>$Q'(u_i) = e^{u_i}$</p>
+<p>and we end up with</p>
+<h2 id="$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-=-%5Cfrac%7B-e%5E%7Bu_i%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj=1%7D%5EL-e%5E%7Bu_j%7D)%5E2%7D-=--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k---$">$\frac{\partial}{\partial u_i} \sigma_{sm}(\vec{u})_k = \frac{-e^{u_i} e^{u_k}}{(\sum_{j=1}^L e^{u_j})^2} = -\sigma_{sm}(\vec{u})_i \sigma_{sm}(\vec{u})_k   $<a class="anchor-link" href="#$%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial-u_i%7D-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k-=-%5Cfrac%7B-e%5E%7Bu_i%7D-e%5E%7Bu_k%7D%7D%7B(%5Csum_%7Bj=1%7D%5EL-e%5E%7Bu_j%7D)%5E2%7D-=--%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_k---$">&#182;</a></h2><p>Plugging this back into the derivative of BCE loss, we have the following incredibly simple expression after a cancellation</p>
+
 </div>
 </div>
 </div>
@@ -14993,7 +14992,9 @@ $Q'(u_i) = e^{u_i}$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="$u_i-%5Cgets-u_i---%5Calpha-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i$">$u_i \gets u_i - \alpha \sigma_{sm}(\vec{u})_i$<a class="anchor-link" href="#$u_i-%5Cgets-u_i---%5Calpha-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i$">&#182;</a></h3>
+<p>The update rule for gradient descent for a cold 0 is then</p>
+<h3 id="$u_i-%5Cgets-u_i---%5Calpha-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i$">$u_i \gets u_i - \alpha \sigma_{sm}(\vec{u})_i$<a class="anchor-link" href="#$u_i-%5Cgets-u_i---%5Calpha-%5Csigma_%7Bsm%7D(%5Cvec%7Bu%7D)_i$">&#182;</a></h3><p>In other words, if our softmax output is greater than 0 at our cold 0, we should nudge $u_i$ to the left.  This will make $\frac{e^{u_i}}{\sum_{j = 1}^{L} e^{u_j}}$ closer to 0</p>
+
 </div>
 </div>
 </div>
