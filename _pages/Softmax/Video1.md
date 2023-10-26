@@ -21,4 +21,4 @@ Watch the videos below, and click the <code>Next</code> button to continue when 
 
 <h2>Notes</h2>
 
-<iframe src = "../images/Softmax/Softmax.html" width="100%" height=3700></iframe>
+<iframe src = "../images/Softmax/Softmax.html" width="100%" height=4000></iframe>
