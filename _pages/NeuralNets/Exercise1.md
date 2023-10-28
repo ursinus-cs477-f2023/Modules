@@ -30,6 +30,9 @@ processor:
     - incorrectcheck: |
         pyodide.globals.get("res") == 0
       feedback: "Try again.  It looks like you're still returning 0, but you need to evaluate the neural network layers in a loop" 
+    - incorrectcheck: |
+        Math.abs(pyodide.globals.get("res") + 4.618) < tol
+      feedback: "Try again.  It looks like you've got everything setup right in a loop, but you need to apply the logistic function to the result of each linear layer" 
 
 files:
 
@@ -78,7 +81,7 @@ files:
         As = [np.random.randn(4, 3), np.random.randn(5, 4), np.random.randn(1, 5)]
         bs = [np.random.randn(4), np.random.randn(5), np.random.randn(1)]
         x = np.random.randn(3)
-        res = nn_forward(As, bs, x)
+        res = nn_forward(As, bs, x)[0]
 
         
         
