@@ -1,0 +1,24 @@
+* Video showing multi-class logistic regression on digits
+
+
+* Video on smooth stripe vs square stripe to show non separability
+
+
+* Neural nets
+- Explain how to separate circle
+- link to tensorflow playground
+- talk about relu
+Exercise:
+
+
+* Neural nets in torch
+- show how to setup, train, and separate circle
+- show how to put things into a class
+- show how to count parameters
+Exercise:
+- Say how many layers and how many weights are needed
+
+
+
+* Convolution
+
