@@ -24,12 +24,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.5620932"
-     inkscape:cx="220.71797"
+     inkscape:cx="219.54705"
      inkscape:cy="127.63002"
      inkscape:window-width="1340"
      inkscape:window-height="1005"
-     inkscape:window-x="570"
-     inkscape:window-y="54"
+     inkscape:window-x="665"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      fit-margin-top="0"
@@ -421,5 +421,16 @@
          style="stroke-width:0.264583"
          x="53.978748"
          y="155.84502">p(zi|x) ~ N(mui|x, sigmai|x) </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="109.16103"
+       y="146.65282"
+       id="text3022"><tspan
+         sodipodi:role="line"
+         id="tspan3020"
+         style="stroke-width:0.264583"
+         x="109.16103"
+         y="146.65282">p(xest|z)</tspan></text>
   </g>
 </svg>
