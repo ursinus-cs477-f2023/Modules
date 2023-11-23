@@ -15028,40 +15028,7 @@ layer 2 weight set 1 torch.Size([32])
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[7], line 24</span>
-<span class="ansi-green-intense-fg ansi-bold">     21</span> _, _, loss <span style="color: rgb(98,98,98)">=</span> model(X)
-<span class="ansi-green-intense-fg ansi-bold">     22</span> <span style="color: rgb(95,135,135)"># Compute the gradients of the loss function with respect</span>
-<span class="ansi-green-intense-fg ansi-bold">     23</span> <span style="color: rgb(95,135,135)"># to all of the parameters of the model</span>
-<span class="ansi-green-fg">---&gt; 24</span> loss<span style="color: rgb(98,98,98)">.</span>backward()
-<span class="ansi-green-intense-fg ansi-bold">     25</span> <span style="color: rgb(95,135,135)"># Update the parameters based on the gradient and</span>
-<span class="ansi-green-intense-fg ansi-bold">     26</span> <span style="color: rgb(95,135,135)"># the optimization scheme</span>
-<span class="ansi-green-intense-fg ansi-bold">     27</span> optimizer<span style="color: rgb(98,98,98)">.</span>step()
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/torch/_tensor.py:487</span>, in <span class="ansi-cyan-fg">Tensor.backward</span><span class="ansi-blue-fg">(self, gradient, retain_graph, create_graph, inputs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    477</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> has_torch_function_unary(<span style="color: rgb(0,135,0)">self</span>):
-<span class="ansi-green-intense-fg ansi-bold">    478</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> handle_torch_function(
-<span class="ansi-green-intense-fg ansi-bold">    479</span>         Tensor<span style="color: rgb(98,98,98)">.</span>backward,
-<span class="ansi-green-intense-fg ansi-bold">    480</span>         (<span style="color: rgb(0,135,0)">self</span>,),
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    485</span>         inputs<span style="color: rgb(98,98,98)">=</span>inputs,
-<span class="ansi-green-intense-fg ansi-bold">    486</span>     )
-<span class="ansi-green-fg">--&gt; 487</span> torch<span style="color: rgb(98,98,98)">.</span>autograd<span style="color: rgb(98,98,98)">.</span>backward(
-<span class="ansi-green-intense-fg ansi-bold">    488</span>     <span style="color: rgb(0,135,0)">self</span>, gradient, retain_graph, create_graph, inputs<span style="color: rgb(98,98,98)">=</span>inputs
-<span class="ansi-green-intense-fg ansi-bold">    489</span> )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/torch/autograd/__init__.py:200</span>, in <span class="ansi-cyan-fg">backward</span><span class="ansi-blue-fg">(tensors, grad_tensors, retain_graph, create_graph, grad_variables, inputs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    195</span>     retain_graph <span style="color: rgb(98,98,98)">=</span> create_graph
-<span class="ansi-green-intense-fg ansi-bold">    197</span> <span style="color: rgb(95,135,135)"># The reason we repeat same the comment below is that</span>
-<span class="ansi-green-intense-fg ansi-bold">    198</span> <span style="color: rgb(95,135,135)"># some Python versions print out the first line of a multi-line function</span>
-<span class="ansi-green-intense-fg ansi-bold">    199</span> <span style="color: rgb(95,135,135)"># calls in the traceback and some print out the last line</span>
-<span class="ansi-green-fg">--&gt; 200</span> Variable<span style="color: rgb(98,98,98)">.</span>_execution_engine<span style="color: rgb(98,98,98)">.</span>run_backward(  <span style="color: rgb(95,135,135)"># Calls into the C++ engine to run the backward pass</span>
-<span class="ansi-green-intense-fg ansi-bold">    201</span>     tensors, grad_tensors_, retain_graph, create_graph, inputs,
-<span class="ansi-green-intense-fg ansi-bold">    202</span>     allow_unreachable<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">True</span>, accumulate_grad<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">True</span>)
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
 </div>
 </div>
 

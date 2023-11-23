@@ -10,7 +10,7 @@ info:
 ---
 
 <p>
-Watch the video below, and click the <code>Next</code> button to continue when you're finished
+Watch the video below, and <a href = "https://ursinus.instructure.com/courses/16260/quizzes/24587">click here</a> to complete an exercise on Canvas when you're finished.  Then, click the <code>Next</code> button to continue.
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/89dfBoMfxvc?si=6pV9zIhe0i9pFmVJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
