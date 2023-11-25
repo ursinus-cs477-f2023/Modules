@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="105.99554mm"
+   height="116.00658mm"
+   viewBox="0 0 105.99554 116.00658"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="VAEMath.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.5620932"
+     inkscape:cx="338.59034"
+     inkscape:cy="327.85693"
+     inkscape:window-width="1340"
+     inkscape:window-height="1005"
+     inkscape:window-x="580"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20198"
+       originx="-40.093803"
+       originy="-114.83105" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path55724" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path55724-2" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.093799,-114.83104)">
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="41.211796"
+       y="119.68491"
+       id="text13238"><tspan
+         sodipodi:role="line"
+         id="tspan13236"
+         style="stroke-width:0.264583"
+         x="41.211796"
+         y="119.68491">Variational Autoencoders = Autoencoders + Bayes</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 44.92908,135.01257 18.520833,6.61458"
+       id="path20397" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 44.929081,152.21049 18.520833,-6.61458"
+       id="path20397-1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 44.92908,135.01257 v 17.19792"
+       id="path20539" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.449913,141.62715 v 3.96875"
+       id="path20541" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="40.009739"
+       y="144.72856"
+       id="text22106"><tspan
+         sodipodi:role="line"
+         id="tspan22104"
+         style="stroke-width:0.264583"
+         x="40.009739"
+         y="144.72856">X</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.181124"
+       id="rect22826"
+       width="10.896049"
+       height="4.8743792"
+       x="65.414413"
+       y="141.81433" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="69.65731"
+       y="145.23128"
+       id="text23710"><tspan
+         sodipodi:role="line"
+         id="tspan23708"
+         style="stroke-width:0.264583"
+         x="69.65731"
+         y="145.23128">z</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 97.893782,135.51172 79.372966,142.1263"
+       id="path20397-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 97.893782,152.70964 79.372965,146.09506"
+       id="path20397-1-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 97.893782,135.51172 v 17.19792"
+       id="path20539-1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 79.372966,142.1263 v 3.96875"
+       id="path20541-0" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="99.029839"
+       y="144.78479"
+       id="text22106-7"><tspan
+         sodipodi:role="line"
+         id="tspan22104-5"
+         style="stroke-width:0.264583"
+         x="99.029839"
+         y="144.78479">Xest</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="66.059669"
+       y="150.72501"
+       id="text29246"><tspan
+         sodipodi:role="line"
+         id="tspan29244"
+         style="stroke-width:0.264583"
+         x="66.059669"
+         y="150.72501">p(z|x)</tspan></text>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.264583"
+       id="path50731"
+       cx="64.82299"
+       cy="167.47067"
+       rx="2.5389385"
+       ry="2.5036182" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="63.992844"
+       y="168.24486"
+       id="text51563"><tspan
+         sodipodi:role="line"
+         id="tspan51561"
+         style="stroke-width:0.264583"
+         x="63.992844"
+         y="168.24486">z</tspan></text>
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.264583"
+       id="path50731-9"
+       cx="86.787064"
+       cy="167.04451"
+       rx="2.5389385"
+       ry="2.5036182" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="85.956917"
+       y="167.8187"
+       id="text51563-6"><tspan
+         sodipodi:role="line"
+         id="tspan51561-1"
+         style="stroke-width:0.264583"
+         x="85.956917"
+         y="167.8187">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="103.23878"
+       y="127.39941"
+       id="text57941"><tspan
+         sodipodi:role="line"
+         id="tspan57939"
+         style="stroke-width:0.264583"
+         x="103.23878"
+         y="127.39941">p(z|x) = p(x|z)p(z)</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="103.23878"
+         y="130.9272"
+         id="tspan57943">                  p(x)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 114.39979,128.44165 15.58225,-0.15221"
+       id="path58310" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 119.33486,119.7884 0.41308,4.37813"
+       id="path58505" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="117.07835"
+       y="116.97527"
+       id="text64795"><tspan
+         sodipodi:role="line"
+         id="tspan64793"
+         style="stroke-width:0.264583"
+         x="117.07835"
+         y="116.97527">obs likelihood</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 131.69634,122.8771 -4.45833,2.25342"
+       id="path66074" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="130.31764"
+       y="122.33759"
+       id="text67500"><tspan
+         sodipodi:role="line"
+         id="tspan67498"
+         style="stroke-width:0.264583"
+         x="130.31764"
+         y="122.33759">latent prior</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 121.99691,135.31314 -0.11242,-3.52392"
+       id="path68505" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="108.08512"
+       y="137.22717"
+       id="text70063"><tspan
+         sodipodi:role="line"
+         id="tspan70061"
+         style="stroke-width:0.264583"
+         x="108.08512"
+         y="137.22717">Observation probability</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 93.155938,127.0827 8.895822,-0.19638"
+       id="path88510" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="46.499878"
+       y="145.38095"
+       id="text89804"><tspan
+         sodipodi:role="line"
+         id="tspan89802"
+         style="stroke-width:0.264583"
+         x="46.499878"
+         y="145.38095">Encoder</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="84.249962"
+       y="126.16647"
+       id="text92436"><tspan
+         sodipodi:role="line"
+         id="tspan92434"
+         style="stroke-width:0.264583"
+         x="84.249962"
+         y="126.16647">posterior</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="84.249962"
+         y="129.69426"
+         id="tspan92624">likelihood</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 67.212467,167.5931 17.065434,0.22969"
+       id="path1733" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-7)"
+       d="m 84.250308,166.21617 -17.065434,0.22969"
+       id="path1733-8" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="71.548729"
+       y="165.312"
+       id="text3541"><tspan
+         sodipodi:role="line"
+         id="tspan3539"
+         style="stroke-width:0.264583"
+         x="71.548729"
+         y="165.312">p(z|x)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="53.392296"
+       y="159.92615"
+       id="text6161"><tspan
+         sodipodi:role="line"
+         id="tspan6159"
+         style="stroke-width:0.264583"
+         x="53.392296"
+         y="159.92615">Use an estimate: q(z|x)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 97.971001,169.71816 41.074319,0.1506"
+       id="path6956" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 99.874371,168.53094 c 4.059209,0.15519 6.139889,-3.95306 6.354899,-7.46632 -0.11545,-3.03609 2.25748,-7.88861 5.86423,-5.58207 2.7256,1.6642 1.8205,6.54134 5.75934,6.65994 4.00686,0.48776 5.40975,-5.65524 9.54667,-4.48953 2.90641,1.48444 2.7817,5.33674 4.6005,7.73247 1.55777,2.62152 4.64671,3.07791 7.04531,4.48333"
+       id="path7071" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;fill:#ff0000;stroke-width:0.264583"
+       x="135.22896"
+       y="165.26778"
+       id="text8419"><tspan
+         sodipodi:role="line"
+         id="tspan8417"
+         style="fill:#ff0000;stroke-width:0.264583"
+         x="135.22896"
+         y="165.26778">p(z|x)</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.78981,168.73714 c 3.86998,-0.0936 4.14809,-4.9442 5.43946,-7.67252 0.75193,-2.63743 0.8928,-8.25232 4.95094,-7.12195 4.10288,2.02653 3.78902,7.20677 5.81514,10.7343 0.99536,1.91807 2.82821,3.6125 4.9083,4.18182"
+       id="path9326" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="106.62415"
+       y="151.46078"
+       id="text11664"><tspan
+         sodipodi:role="line"
+         id="tspan11662"
+         style="fill:#0000ff;stroke-width:0.264583"
+         x="106.62415"
+         y="151.46078">q(z|x)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="83.33844"
+       y="173.9911"
+       id="text13804"><tspan
+         sodipodi:role="line"
+         id="tspan13802"
+         style="stroke-width:0.264583"
+         x="83.33844"
+         y="173.9911">KL(p, q) looks at ratio of log(p/q)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="82.921776"
+       y="177.92288"
+       id="text13804-2"><tspan
+         sodipodi:role="line"
+         id="tspan13802-9"
+         style="stroke-width:0.264583"
+         x="82.921776"
+         y="177.92288">KL(q, p) looks at ratio of log(q/p)</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="82.921776"
+         y="181.45067"
+         id="tspan33589">    -this is the one we want because it fits </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="82.921776"
+         y="184.97845"
+         id="tspan33591">     q(z|x) tightly under one &quot;mode&quot; of p(z|x)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="82.575081"
+       y="181.91919"
+       id="text17147"><tspan
+         sodipodi:role="line"
+         id="tspan17145"
+         style="stroke-width:0.264583"
+         x="82.575081"
+         y="181.91919" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="82.929955"
+       y="193.21759"
+       id="text30609"><tspan
+         sodipodi:role="line"
+         id="tspan30607"
+         style="stroke-width:0.264583"
+         x="82.929955"
+         y="193.21759">KL(q(z|x), p(z|x)), q(z|x) is learnable</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 83.629015,223.70058 41.074315,0.1506"
+       id="path6956-0" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;fill:#ff0000;stroke-width:0.264583"
+       x="108.50747"
+       y="210.99207"
+       id="text8419-6"><tspan
+         sodipodi:role="line"
+         id="tspan8417-2"
+         style="fill:#ff0000;stroke-width:0.264583"
+         x="108.50747"
+         y="210.99207">p(z)</tspan></text>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.174329px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 97.156502,223.26323 c 1.676332,-0.0938 1.796792,-4.9552 2.356172,-7.68959 0.3257,-2.6433 0.38672,-8.27068 2.144556,-7.13779 1.77721,2.03104 1.64126,7.2228 2.51889,10.75818 0.43116,1.92233 1.22508,3.62053 2.12609,4.19112"
+       id="path9326-6" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="91.46347"
+       y="205.84789"
+       id="text11664-7"><tspan
+         sodipodi:role="line"
+         id="tspan11662-5"
+         style="fill:#0000ff;stroke-width:0.264583"
+         x="91.46347"
+         y="205.84789">q(z|x)</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 83.629014,223.70058 c 6.611831,-2.34629 7.89463,-9.99656 10.859835,-15.41201 5.360985,-4.9945 9.707001,2.87853 11.740341,7.11431 2.02558,3.60029 5.30947,6.36619 9.43576,7.11488"
+       id="path2569" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="80.825447"
+       y="226.72279"
+       id="text4127"><tspan
+         sodipodi:role="line"
+         id="tspan4125"
+         style="stroke-width:0.264583"
+         x="80.825447"
+         y="226.72279">KL(q(z|x), p(z)) is forcing posterior likelihood </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="80.825447"
+         y="230.25058"
+         id="tspan4129">to be under the prior</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="81.742233"
+       y="201.48935"
+       id="text8375"><tspan
+         sodipodi:role="line"
+         id="tspan8373"
+         style="stroke-width:0.264583"
+         x="81.742233"
+         y="201.48935">KL term in ELBO:</tspan></text>
+  </g>
+</svg>

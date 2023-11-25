@@ -6,7 +6,7 @@ excerpt: "CS 477: Variational Autoencoders Concept"
 
 info:
   prev: "./Video1"
-  next: "./Video3"
+  next: "./Exercise2"
   comments: "true"
 ---
 
